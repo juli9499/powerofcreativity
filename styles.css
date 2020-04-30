@@ -1,36 +1,73 @@
-body {
+/*--------------------------------- G E N E R A L --------------------------------*/
+body,
+html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    background-color: #F9F9F9;
 }
-
-
-
-
-#menuToggle {
-    display: block;
-    position: relative;
-    top: 50px;
-    left: 50px;
-
-    z-index: 1;
 
 /*
-    -webkit-user-select: none;
-    user-select: none;
+google fonte:
+font-family: 'Roboto',
+sans-serif;
+font-family: 'Finger Paint',
+cursive;
+font-family: 'Open Sans',
+sans-serif;
 */
+
+h1 {
+    font-family: 'Roboto';
 }
 
-#menuToggle a {
+h2 {
+    font-family: 'Roboto';
+}
+
+p {
+    font-family: 'Open Sans';
+}
+
+/*Hoejre del er dobbelt so stor som venstre (1-2)*/
+.container12 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+    display: grid;
+}
+
+
+/*Venstre del er dobbelt so stor som hoejre (2-1)*/
+.container21 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+    display: grid;
+}
+
+/*------------------------------ B U R G E R M E N U -----------------------------*/
+
+a {
     text-decoration: none;
     color: #232323;
 
     transition: color 0.3s ease;
 }
 
-#menuToggle a:hover {
+a:hover {
     color: tomato;
 }
 
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
 
 #menuToggle input {
     display: block;
@@ -43,12 +80,15 @@ body {
     cursor: pointer;
 
     opacity: 0;
+    /* hide this */
     z-index: 2;
+    /* and place it over the hamburger */
 
-/*    -webkit-touch-callout: none;*/
 }
 
-
+/*
+ * Just a quick hamburger
+ */
 #menuToggle span {
     display: block;
     width: 33px;
@@ -56,7 +96,8 @@ body {
     margin-bottom: 5px;
     position: relative;
 
-    background: #cdcdcd;
+
+    background: #ffffff;
     border-radius: 3px;
 
     z-index: 1;
@@ -64,8 +105,9 @@ body {
     transform-origin: 4px 0px;
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;}
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
 
 #menuToggle span:first-child {
     transform-origin: 0% 0%;
@@ -97,6 +139,7 @@ body {
  * Ohyeah and the last one should go the other direction
  */
 #menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
     transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -105,19 +148,20 @@ body {
  * at the top left of the screen
  */
 #menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    margin: -100px 0 0 0;
     padding: 50px;
-    padding-top: 125px;
+    padding-top: 200px;
+    right: -100px;
 
-    background: #ededed;
+    background: #ffffff;
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
 
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    transform: translate(100%, 0);
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
@@ -128,8 +172,92 @@ body {
 }
 
 /*
- * And let's slide it in from the left
+ * And let's fade it in from the left
  */
 #menuToggle input:checked ~ ul {
-    transform: none;
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+
+/*---------------------------------- S P L A S H --------------------------------*/
+
+.splash_logo {
+    background-image: url(foto/logo_hvid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    width: 400px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vw;
+
+}
+
+.splash_background {
+    background-image: url(foto/splash-placeholder.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+/*------------------------------ I N T R O D U K T I O N  -----------------------*/
+#introduktion {
+    position: relative;
+}
+
+.brush-stroke {
+    background-image: url(foto/gul-placeholder.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    z-index: -1;
+    top: 20px;
+    left: -70px;
+}
+
+.text {
+    padding-left: 7vw;
+    padding-right: 4vw;
+    align-self: center;
+}
+
+.klode_gif {
+    background-image: url(foto/Klode.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+    justify-self: center;
+}
+
+/*----------------------------------- H J E R N E N -----------------------------*/
+
+
+/*------------------------------ M E D I A Q U E R I E S ------------------------*/
+
+@media screen and (max-width: 750px) {
+
+    /*Hoejre del er dobbelt so stor som venstre (1-2)*/
+    .container12 {
+        grid-template-columns: 1fr;
+    }
+
+
+    /*Venstre del er dobbelt so stor som hoejre (2-1)*/
+    .container21 {
+        grid-template-columns: 1fr;
+    }
 }

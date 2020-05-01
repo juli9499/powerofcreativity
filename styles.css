@@ -442,7 +442,8 @@ html {
     right: 0;
     background-image: url(foto/hjernen.png);
     background-size: 100%;
-    background-color: darkslategrey;
+    background-color: #00242A;
+    background-repeat: no-repeat;
 }
 
 

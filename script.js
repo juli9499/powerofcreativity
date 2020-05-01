@@ -1,35 +1,21 @@
-$('.hotspot').each(function () {
+function selectHotspot(e) {
+    const clickedHotspot = e.target.parentElement;
+    const container = clickedHotspot.parentElement;
 
-    var $this = $(this),
-        top = $this.data('top'),
-        left = $this.data('left');
+    // only include hotspots within same image to allow one open hotspot per image; change "container" to "document" to allow only one open hotspot for entire page:
+    const hotspots = container.querySelectorAll(".lg-hotspot");
+    hotspots.forEach(hotspot => {
+        if (hotspot === clickedHotspot) {
+            hotspot.classList.toggle("lg-hotspot--selected");
+        } else {
+            hotspot.classList.remove("lg-hotspot--selected");
+        }
+    });
+}
 
-    $this.css({
-            top: top + "%",
-            left: left + "%"
-        })
-        .addClass('is-visible');
-
-});
-
-$(".hotspots-label").on('click', function (e) {
-    $(this).removeClass('is-visible');
-    $(this).parents('.image').find('.hotspot').removeClass('is-active');
-    e.preventDefault();
-});
-
-$('.hotspot').on('click', function (e) {
-
-    var text = $(this).data('text');
-
-    if (!$(this).hasClass('is-active')) {
-        $(this).parents('.image').find('.hotspot').removeClass('is-active');
-        $(this).addClass('is-active');
-        $(this).parents('.image').find('.hotspots-label').html('<strong>' + $(this).text() + '</strong> <span>' + text + '</span>').addClass('is-visible');
-    } else {
-        $(this).removeClass('is-active');
-        $(this).parents('.image').find('.hotspots-label').html('<strong>' + $(this).text() + '</strong> <span>' + text + '</span>').removeClass('is-visible');
-    }
-
-    e.preventDefault();
-});
+(() => {
+    const buttons = document.querySelectorAll(".lg-hotspot__button");
+    buttons.forEach(button => {
+        button.addEventListener("click", selectHotspot);
+    });
+})();

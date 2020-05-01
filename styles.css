@@ -456,6 +456,10 @@ html {
         grid-template-columns: 1fr;
     }
 
+    .splash_logo {
+        width: 200px;
+        height: 150px;
+    }
 
     /*Venstre del er dobbelt so stor som hoejre (2-1)*/
     .container21 {

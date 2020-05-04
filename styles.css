@@ -442,6 +442,7 @@ a:hover {
 
 /*------------------------------ Q U I Z   M Y T E R -----------------------*/
 
+/*
 #myter {
     background-color: #00242A;
     color: white;
@@ -569,7 +570,7 @@ button {
 }
 
 .resultBtns {
-    /*    width: 60%;*/
+        width: 60%;
     margin: auto;
     text-align: center;
 }
@@ -1226,6 +1227,7 @@ input[type="radio"]:checked ~ .bullet .line.seven {
         opacity: 0;
     }
 }
+*/
 
 /*------------------------------ F O O T E R ------------------------*/
 footer {

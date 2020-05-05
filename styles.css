@@ -11,9 +11,27 @@ html {
 
 
 /*
-BLÅ: #17BAD1 PINK: #FF4677 GRØN: #83C52B GUL: #FFCB00 mørkegrøn: #00242A bagggrund: #F6F6F6
+mørkegrøn: #00242A bagggrund: #F6F6F6
 */
+.pink {
+    color: #FF4677;
+    font-family: 'Finger Paint';
+}
 
+.blue {
+    color: #17BAD1;
+    font-family: 'Finger Paint';
+}
+
+.green {
+    color: #83C52B;
+    font-family: 'Finger Paint';
+}
+
+.yellow {
+    color: #FFCB00;
+    font-family: 'Finger Paint';
+}
 
 /*
 google fonte:
@@ -33,6 +51,12 @@ h2 {
     font-family: 'Roboto';
     font-weight: 500;
 }
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
 
 p {
     font-family: 'Open Sans';
@@ -74,8 +98,13 @@ a {
     transition: color 0.3s ease;
 }
 
+.current {
+    font-weight: bolder;
+    color: #FF4677;
+}
+
 a:hover {
-    color: tomato;
+    color: #FF4677;
 }
 
 #menuToggle {
@@ -84,7 +113,7 @@ a:hover {
     top: 50px;
     right: 50px;
 
-    z-index: 2;
+    z-index: 5;
 
     -webkit-user-select: none;
     user-select: none;
@@ -102,7 +131,7 @@ a:hover {
 
     opacity: 0;
     /* hide this */
-    z-index: 3;
+    z-index: 6;
     /* and place it over the hamburger */
 
 }
@@ -118,10 +147,11 @@ a:hover {
     position: relative;
 
 
-    background: #ffffff;
+    /*    background: #ffffff;*/
+    background: #17BAD1;
     border-radius: 3px;
 
-    z-index: 2;
+    z-index: 5;
 
     transform-origin: 4px 0px;
 
@@ -145,7 +175,8 @@ a:hover {
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    /*    background: #232323;*/
+    background: #17BAD1;
 }
 
 /*
@@ -192,6 +223,7 @@ a:hover {
 #menu li {
     padding: 10px 0;
     font-size: 22px;
+    font-family: 'Roboto';
 }
 
 /*
@@ -234,6 +266,24 @@ a:hover {
 
 }
 
+/*--------------------------------- L I L L E    L O G O  ------------------------*/
+
+.lille_logo {
+    background-image: url(foto/logo_blaa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    width: 200px;
+    height: 150px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
 /*------------------------------ I N T R O D U K T I O N  -----------------------*/
 #introduktion {
     position: relative;
@@ -246,7 +296,7 @@ a:hover {
     position: absolute;
     width: 400px;
     height: 200px;
-    top: 20px;
+    top: 10px;
     left: -70px;
     z-index: 1;
 }
@@ -439,6 +489,15 @@ a:hover {
 }
 
 /*------------------------------ E K S P E R T V I D E O  -----------------------*/
+/*
+.ekspert_videoer {
+    grid-area: video;
+}
+
+.ekspert_tekst {
+    grid-area: tekst;
+}
+*/
 
 /*------------------------------ Q U I Z   M Y T E R -----------------------*/
 
@@ -1229,7 +1288,204 @@ input[type="radio"]:checked ~ .bullet .line.seven {
 }
 */
 
-/*------------------------------ F O O T E R ------------------------*/
+
+/*---------------------------------- I M A G E   S L I D E R -------------------------------*/
+
+.slide_foto {
+    height: 300px;
+    margin: 1vw auto;
+    overflow: hidden;
+    width: 450px;
+}
+
+.slide_foto figure {
+    background-image: url(foto/color_pic.png);
+    background-size: cover;
+    font-size: 0;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+#compare {
+    background-image: url(foto/bw_pic.png);
+    background-size: cover;
+    bottom: 0;
+    border-right: 5px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 0 15px -13px #000;
+    height: 100%;
+    max-width: 98.6%;
+    min-width: 0.6%;
+    overflow: visible;
+    position: absolute;
+    width: 50%;
+    animation: first 2s 1 normal ease-in-out 0.1s;
+    -webkit-animation: first 2s 1 normal ease-in-out 0.1s;
+}
+
+input#slider {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    cursor: col-resize;
+    height: 100vw;
+    left: 0;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    position: relative;
+    top: -100vw;
+    width: 100%;
+}
+
+input#slider::-moz-range-track {
+    background: transparent;
+}
+
+input#slider::-ms-track {
+    border: none;
+    background-color: transparent;
+    height: 100vw;
+    left: 0;
+    outline: none;
+    position: relative;
+    top: -100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: col-resize;
+    color: transparent;
+}
+
+input#slider::-ms-fill-lower {
+    background-color: transparent;
+}
+
+input#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#slider::-moz-range-thumb {
+    -moz-appearance: none;
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#slider::-ms-thumb {
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#slider::-ms-tooltip {
+    display: none;
+}
+
+#compare::before {
+    background: url(foto/compare.png) no-repeat scroll 0 center transparent;
+    background-size: contain;
+    content: " ";
+    float: right;
+    height: 100%;
+    margin-right: -34px;
+    position: relative;
+    top: 0;
+    width: 64px;
+}
+
+@keyframes first {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 80%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes first {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 80%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+/*---------------------------------- K A M P A G N E    V I D E O  -------------------------------*/
+
+#kampagne_video {
+    background-color: #00242A;
+    color: white;
+}
+
+
+/*------------------------------ I V Æ R K S Æ T T E R E     Q U O T E S   ---------------------------*/
+#ivaerksaetter img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#ivaerksaetter {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    display: grid;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#ivaerksaetter p {
+    text-align: center;
+}
+
+#ivaerksaetter h3 {
+    text-align: center;
+}
+
+#ivaerksaetter h2 {
+    text-align: center;
+}
+
+.ivaerksaetter_intro {
+    width: 500px;
+    justify-self: center;
+}
+
+.ivaerksaetter1 {
+    width: 500px;
+    justify-self: start;
+}
+
+.ivaerksaetter2 {
+    width: 500px;
+    justify-self: end;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+/*---------------------------------- F O O T E R -------------------------------*/
 footer {
     background-color: #00242A;
     color: white;
@@ -1237,7 +1493,7 @@ footer {
 
 /*------------------------------ M E D I A Q U E R I E S ------------------------*/
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
 
     /*Hoejre del er dobbelt so stor som venstre (1-2)*/
     .container12 {
@@ -1280,5 +1536,64 @@ footer {
     #quote h2 {
         font-size: 1rem;
         text-align: center;
+    }
+
+    #ivaerksaetter {
+        padding-right: 10vw;
+        grid-gap: 10vh;
+    }
+
+
+
+    /*
+    .ekspert_video {
+        grid-template-rows: auto;
+        grid-template-areas:
+            "tekst"
+            "video"
+    }
+*/
+
+
+}
+
+@media screen and (max-width: 550px) {
+    .slide_foto {
+        height: 250px;
+        margin: 0px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .brush-stroke {
+        width: 300px;
+        height: 150px;
+        top: 0px;
+        left: -70px;
+    }
+
+    #ivaerksaetter {
+        padding-right: 0vw;
+        padding-left: 0vw;
+        grid-gap: 10vh;
+    }
+
+    .ivaerksaetter_intro {
+        width: 300px;
+    }
+
+    .ivaerksaetter1 {
+        width: 300px;
+        justify-self: center;
+    }
+
+    .ivaerksaetter2 {
+        width: 300px;
+        justify-self: center;
+    }
+
+    .whitespace {
+        padding-top: 20vw;
+        padding-bottom: 20vw;
     }
 }

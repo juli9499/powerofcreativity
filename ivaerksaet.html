@@ -36,13 +36,13 @@
             <a href="index.html">
                 <li>Forside</li>
             </a>
-            <a href="ivaerksaet.html">
+            <a href="ivaerksaet.html" class="current">
                 <li>Iværksætteri</li>
             </a>
-            <a href="">
+            <a href="tidslinje.html">
                 <li>Skole tidslinje</li>
             </a>
-            <a href="">
+            <a href="bevaegelse.html">
                 <li>Om bevægelsen</li>
             </a>
 
@@ -53,7 +53,7 @@
 
     <!----------------------- L O G O ----------------------->
 
-    <section class="lille_logo"></section>
+    <div class="lille_logo"></div>
 
     <!---------------------------- I V Æ R K S Æ T T E R    I N T R O --------------------------->
 
@@ -61,18 +61,93 @@
     <section id="introduktion" class="container21 whitespace">
         <div class="brush-stroke"></div>
         <div class="text">
-            <h2>En klar Introduction til kampagne</h2>
+            <h2>Introduction til <span class="pink">iværksætteri</span></h2>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
         </div>
-        <div class="slide_foto"></div>
+        <div class="slide_foto">
+            <figure>
+                <div id="compare"></div>
+            </figure>
+            <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="slider" />
+        </div>
 
     </section>
+
+
+
+
+
+    <!-------------------------- K A M P A G N E   V I D E O E R  -------------------->
+    <section id="kampagne_video" class="container12 whitespace">
+        <div class="kampagne_videoer">
+            <video width="500" height="300" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <video width="500" height="300" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="kampagne_text">
+            <h2>Kampagne videoer om <span class="yellow">bevægelsen</span></h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+        </div>
+    </section>
+
+
+
+
+
+    <!-------------------------- I V Æ R K S Æ T T E R E    Q U O T E S  -------------------->
+    <section id="ivaerksaetter" class="whitespace">
+        <div class="ivaerksaetter_intro">
+            <h2>Kendte <span class="pink">iværksættere</span> og deres citater</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo </p>
+            <p class="bold">"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non"</p>
+        </div>
+        <div class="ivaerksaetter1">
+            <img src="foto/stevejobs.png" alt="Steve Jobs">
+            <h3>Navn på iværksætter</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            <p class="bold">"Neque porro quisquam est, qui <span class="yellow">dolorem ipsum</span> quia dolor sit amet, consectetur, adipisci velit, sed quia non"</p>
+        </div>
+        <div class="ivaerksaetter2">
+            <img src="foto/stevejobs.png" alt="Steve Jobs">
+            <h3>Navn på iværksætter</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            <p class="bold">"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non"</p>
+        </div>
+        <div class="ivaerksaetter1">
+            <img src="foto/stevejobs.png" alt="Steve Jobs">
+            <h3>Navn på iværksætter</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            <p class="bold">"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non"</p>
+        </div>
+        <div class="ivaerksaetter2">
+            <img src="foto/stevejobs.png" alt="Steve Jobs">
+            <h3>Navn på iværksætter</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            <p class="bold">"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non"</p>
+        </div>
+        <div class="ivaerksaetter1">
+            <img src="foto/stevejobs.png" alt="Steve Jobs">
+            <h3>Navn på iværksætter</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            <p class="bold">"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non"</p>
+        </div>
+    </section>
+
+
+    <!--------------------------------- F A R V E    Q U I Z  ------------------------------>
+
+    <!------------------------------------ F O O T E R ------------------------------------>
     <footer>
         <h2> her skal footeren være</h2>
         <p> la la la </p>
     </footer>
-
-
 
 
 

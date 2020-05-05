@@ -24,4 +24,7 @@ function selectHotspot(e) {
 
 
 
-//------------------------------------------ M Y T E R    Q U I Z -------------------------------
+//-------------------------------------- I M A G E     S L I D E R -------------------------------
+function beforeAfter() {
+    document.getElementById('compare').style.width = document.getElementById('slider').value + "%";
+}

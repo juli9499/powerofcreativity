@@ -1505,11 +1505,18 @@ input#slider::-ms-tooltip {
 
 
 /*------------------------------ T I D S L I N J E   ---------------------------*/
+
+
 #tidslinje {
     font-family: 'Roboto';
+    display: grid;
 }
 
-.tidslinje_intro {}
+.tidslinje_intro {
+    width: 500px;
+    justify-self: center;
+    text-align: center;
+}
 
 
 .timeline img {
@@ -1554,7 +1561,7 @@ input#slider::-ms-tooltip {
     position: relative;
     width: 6px;
     margin: 0 auto;
-    padding-top: 50px;
+    /*    padding-top: 50px;*/
     background: #404040;
 
 }
@@ -1695,8 +1702,12 @@ footer {
 
 }
 
-footer p,
-h2 {
+footer p {
+    color: white;
+}
+
+
+footer h2 {
     color: white;
 }
 
@@ -1804,5 +1815,12 @@ h2 {
     .whitespace {
         padding-top: 20vw;
         padding-bottom: 20vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .timeline ul li {
+        padding-top: 50px;
+
     }
 }

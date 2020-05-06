@@ -94,6 +94,7 @@
     <section id="instagram">
         <h2>#iværksætteri</h2>
         <p>Brug Hashtagget #iværksætteri for blive en del af bevægelsen, og vis os hvordan du bruger din kreativitet og få en chance for at bliv featured på vores instagram / kampagnen!</p>
+        <div id="instagram-feed1" class="instagram_feed"></div>
     </section>
 
     <!------------------------------------ F O O T E R ------------------------------------>
@@ -110,6 +111,26 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="script.js"></script>
+    <script src="instagram/dist/InstagramFeed.min.js"></script>
+    <script>
+        (function() {
+            new InstagramFeed({
+                'username': 'the_powerofcreativity',
+                'container': document.getElementById("instagram-feed1"),
+                'display_profile': true,
+                'display_biography': false,
+                'display_gallery': true,
+                'callback': null,
+                'styling': true,
+                'items': 5,
+                'items_per_row': 5,
+                'margin': 1
+            });
+
+
+        })(jQuery);
+
+    </script>
 </body>
 
 </html>

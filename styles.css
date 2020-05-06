@@ -319,7 +319,7 @@ a:hover {
 }
 
 .klode_gif {
-    background-image: url(foto/Klode.gif);
+    background-image: url(foto/globe_2.gif);
     background-repeat: no-repeat;
     background-size: cover;
     width: 300px;
@@ -1861,6 +1861,31 @@ footer h2 {
 
 
 
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .flower_picture {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-height: 50vw;
+    }
+
+
+
+}
+
+@media screen and (max-width: 650px) {
+    .timeline ul li {
+        padding-top: 50px;
+
+    }
+
+
+
 }
 
 @media screen and (max-width: 550px) {
@@ -1909,11 +1934,5 @@ footer h2 {
         padding-top: 20vw;
         padding-bottom: 20vw;
     }
-}
 
-@media screen and (max-width: 650px) {
-    .timeline ul li {
-        padding-top: 50px;
-
-    }
 }

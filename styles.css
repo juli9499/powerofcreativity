@@ -1516,6 +1516,7 @@ input#slider::-ms-tooltip {
     width: 500px;
     justify-self: center;
     text-align: center;
+    margin-top: 5vw;
 }
 
 
@@ -1764,15 +1765,16 @@ footer h2 {
     }
 
 
-
-    /*
-    .ekspert_video {
-        grid-template-rows: auto;
-        grid-template-areas:
-            "tekst"
-            "video"
+    #ekspert_video div:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1 / 0;
     }
-*/
+
+    #ekspert_video div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+
 
 
 }

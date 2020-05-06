@@ -43,6 +43,8 @@ font-family: 'Open Sans',
 sans-serif;
 */
 
+
+
 h1 {
     font-family: 'Roboto';
     font-weight: 500;
@@ -295,6 +297,10 @@ a:hover {
     position: relative;
 }
 
+#introduktion h1 {
+    margin-top: 0px;
+}
+
 .brush-stroke {
     background-image: url(foto/gul-placeholder.png);
     background-size: 100%;
@@ -499,7 +505,13 @@ a:hover {
 .ekspert_videoer {
     grid-area: video;
 }
+*/
 
+#ekspert_video h2 {
+    margin-top: 0px;
+}
+
+/*
 .ekspert_tekst {
     grid-area: tekst;
 }
@@ -1438,6 +1450,7 @@ input#slider::-ms-tooltip {
 #kampagne_video {
     background-color: #00242A;
 
+
 }
 
 #kampagne_video p {
@@ -1446,6 +1459,7 @@ input#slider::-ms-tooltip {
 
 #kampagne_video h2 {
     color: white;
+    margin-top: 0px;
 }
 
 
@@ -1510,10 +1524,11 @@ input#slider::-ms-tooltip {
 #tidslinje {
     font-family: 'Roboto';
     display: grid;
+    overflow: hidden;
 }
 
 .tidslinje_intro {
-    width: 500px;
+    max-width: 500px;
     justify-self: center;
     text-align: center;
     margin-top: 5vw;
@@ -1663,7 +1678,7 @@ time {
 }
 
 
-/* GENERAL MEDIA QUERIES
+/* TIMELINE GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 900px) {
@@ -1775,13 +1790,24 @@ footer h2 {
         grid-row: 1 / 2;
     }
 
+    #kampagne_video div:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1 / 0;
+    }
+
+    #kampagne_video div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+
 
 
 }
 
 @media screen and (max-width: 550px) {
+
     .slide_foto {
-        height: 250px;
+        /*        height: 250px;*/
         margin: 0px;
         overflow: hidden;
         width: 100%;

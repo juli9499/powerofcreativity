@@ -511,6 +511,10 @@ a:hover {
     margin-top: 0px;
 }
 
+#ekspert_video video:last-child {
+    margin-top: 5vh;
+}
+
 /*
 .ekspert_tekst {
     grid-area: tekst;
@@ -1453,6 +1457,10 @@ input#slider::-ms-tooltip {
 
 }
 
+#kampagne_video video:last-child {
+    margin-top: 5vh;
+}
+
 #kampagne_video p {
     color: white;
 }
@@ -1716,6 +1724,33 @@ time {
 
 #bevaegelsen {
     display: grid;
+
+
+}
+
+#bloom {
+    background-color: #00242A;
+    display: grid;
+}
+
+#bloom img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bloom video:last-child {
+    margin-top: 5vh;
+}
+
+#bloom h2 {
+    color: white;
+}
+
+#bloom p {
+    color: white;
 }
 
 #bevaegelsen h1 {
@@ -1780,15 +1815,15 @@ footer h2 {
     }
 
     #quote {
-        width: 100vw;
-        ;
-        margin-left: auto;
-        margin-right: auto;
+        width: auto;
+
+        padding-left: 10vw;
+        padding-right: 10vw;
 
     }
 
     #quote h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 

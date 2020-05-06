@@ -302,17 +302,18 @@ a:hover {
     margin-top: 0px;
 }
 
-.brush-stroke {
+.brush-stroke-yellow {
     background-image: url(brushstrokes/yellow3.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     width: 400px;
     height: 200px;
-    top: -30px;
+    top: 300px;
     left: -70px;
     z-index: 1;
 }
+
 
 .text {
     /*    align-self: center;*/
@@ -515,6 +516,25 @@ a:hover {
 
 #ekspert_video video:last-child {
     margin-top: 5vh;
+}
+
+.ekspert_text {
+    position: relative;
+    z-index: 1;
+}
+
+
+.brush-stroke-pink {
+    background-image: url(brushstrokes/blue1.png);
+    transform: scaleX(-1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 250px;
+    right: -250px;
+    z-index: -1;
 }
 
 /*
@@ -1648,6 +1668,7 @@ time {
     margin-bottom: 8px;
     color: white;
     padding: 10px;
+    text-align: center;
 }
 
 

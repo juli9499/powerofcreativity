@@ -521,6 +521,7 @@ a:hover {
 .ekspert_text {
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 
@@ -535,6 +536,7 @@ a:hover {
     top: 250px;
     right: -250px;
     z-index: -1;
+
 }
 
 /*
@@ -545,19 +547,161 @@ a:hover {
 
 /*------------------------------ Q U I Z   M Y T E R -----------------------*/
 
-/*
+.hide {
+    display: none;
+}
+
+#startbillede {
+    background-image: url(foto/placeholder1.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+}
+
+#submit {
+    background-image: url(foto/startquiz.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 100%;
+    width: 250px;
+    height: 120px;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+
 #myter {
     background-color: #00242A;
-    color: white;
+    width: auto;
 }
 
-.myter_text {}
+#myter p {
+    color: #F6F6F6;
+}
 
-.myter_quiz {
+#myter h2 {
+    color: #F6F6F6;
+}
+
+#quiz-container {
     background-color: #17BAD1;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
+#quiz-container p {
+    color: #00242A;
+}
 
+#firstQuestion {
+    text-align: center;
+}
+
+.firstbillede {
+    background-image: url(foto/creativity.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.secondbillede {
+    background-image: url(foto/placeholder3.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.thirdbillede {
+    background-image: url(foto/placeholder4.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.forthbillede {
+    background-image: url(foto/placeholder5.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.resultatbillede {
+    background-image: url(foto/placeholder6.jpeg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#true1,
+#true2,
+#true3,
+#true4 {
+    display: inline-block;
+    background-image: url(foto/sandt.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 100%;
+    width: 170px;
+    height: 100px;
+}
+
+#false1,
+#false2,
+#false3,
+#false4 {
+    display: inline-block;
+    background-image: url(foto/falsk.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 100%;
+    width: 170px;
+    height: 100px;
+}
+
+#nextQuestionTrue,
+#nextQuestionFalse,
+#nextQuestionTrue2,
+#nextQuestionFalse2,
+#nextQuestionTrue3,
+#nextQuestionFalse3,
+#nextQuestionTrue4,
+#nextQuestionFalse4,
+#correctslut,
+#falseslut {
+    background-image: url(foto/naeste.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 100%;
+    width: 170px;
+    height: 100px;
+}
+
+#tryAgain {
+    background-image: url(foto/provigen.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 100%;
+    width: 250px;
+    height: 120px;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+/*
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 
@@ -2030,6 +2174,16 @@ footer h2 {
     .whitespace {
         padding-top: 20vw;
         padding-bottom: 20vw;
+    }
+
+    #startbillede,
+    .firstbillede,
+    .secondbillede,
+    .thirdbillede,
+    .forthbillede,
+    .resultatbillede {
+        width: 300px;
+        height: 200px;
     }
 
 }

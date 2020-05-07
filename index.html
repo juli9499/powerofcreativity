@@ -201,7 +201,118 @@
 
     <!-------------------------- Q U I Z   M Y T E R -------------------->
     <section id="myter" class="container12 whitespace">
-        <!--
+        <div class="myter_text">
+            <h2>Kender du <span class="yellow">myterne</span> om kreativitet?
+                <br><br>
+                Er det sandt eller falsk?</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+        </div>
+
+        <div id="quiz-container">
+            <div id="startbillede" class="hide"></div>
+            <div id="submit"></div>
+
+
+            <div id="firstQuestion" class="hide">
+                <div class="firstbillede"></div>
+                <p>
+                    Kreativitet er en evne for de få
+                </p>
+                <div id="true1" class="hide"></div>
+                <div id="false1" class="hide"></div>
+            </div>
+
+            <div id="correctAnswer1" class="hide">
+                <div class="firstbillede"></div>
+                <p><b>Det er ikke rigtigt, desværre</b><br>Forskning viser at kreativitet er er et beredskab, alle har og som kan næres gennem samarbejde under de rette omstændigheder. De omstændigheder handler om at give plads og tid til at udvikle ideer sammen, at afprøve forskellige muligheder for at løse en opgaver og at vælge nogle muligheder frem for andre.
+                </p>
+                <div id="nextQuestionTrue" class="hide"></div>
+            </div>
+            <div id="falseAnswer1" class="hide">
+                <div class="firstbillede"></div>
+                <p><b>Du har helt ret!</b><br>
+                    Forskning viser at kreativitet er er et beredskab, alle har og som kan næres gennem samarbejde under de rette omstændigheder. De omstændigheder handler om at give plads og tid til at udvikle ideer sammen, at afprøve forskellige muligheder for at løse en opgaver og at vælge nogle muligheder frem for andre. </p>
+                <div id="nextQuestionFalse" class="hide"></div>
+            </div>
+
+            <div id="secQuestion" class="hide">
+                <div class="secondbillede"></div>
+                <p>
+                    Kreativitet er kun æstetiske fag som billedekunst og musik
+                </p>
+                <div id="true2" class="hide"></div>
+                <div id="false2" class="hide"></div>
+            </div>
+
+            <div id="correctAnswer2" class="hide">
+                <div class="secondbillede"></div>
+                <p><b>Det er ikke rigtigt, desværre</b><br>Forskning i kreativitet betoner, at kreativitet ikke kan begrænses til særlige fag. Det er tværtimod en dimension ved al læring, nemlig den dimension, der fører til at skabe noget nyt - det kan være at udvikle en historie, et nyt produkt eller en ny løsning på et problem. Men det kan også være at finde nye perspektiver på et velkendt område eller at opdage nye sammenhænge mellem forskellige vidensområder.
+                </p>
+                <div id="nextQuestionTrue2" class="hide"></div>
+            </div>
+            <div id="falseAnswer2" class="hide">
+                <div class="secondbillede"></div>
+                <p><b>Du har helt ret!</b><br>
+                    Forskning i kreativitet betoner, at kreativitet ikke kan begrænses til særlige fag. Det er tværtimod en dimension ved al læring, nemlig den dimension, der fører til at skabe noget nyt - det kan være at udvikle en historie, et nyt produkt eller en ny løsning på et problem. Men det kan også være at finde nye perspektiver på et velkendt område eller at opdage nye sammenhænge mellem forskellige vidensområder.
+                </p>
+                <div id="nextQuestionFalse2" class="hide"></div>
+            </div>
+
+            <div id="thirdQuestion" class="hide">
+                <div class="thirdbillede"></div>
+                <p>
+                    Kreativitet er skidt
+                </p>
+                <div id="true3" class="hide"></div>
+                <div id="false3" class="hide"></div>
+            </div>
+
+            <div id="correctAnswer3" class="hide">
+                <div class="thirdbillede"></div>
+                <p>det er rigtigt fordi...</p>
+                <div id="nextQuestionTrue3" class="hide"></div>
+            </div>
+            <div id="falseAnswer3" class="hide">
+                <div class="thirdbillede"></div>
+                <p>det er forkert fordi...</p>
+                <div id="nextQuestionFalse3" class="hide"></div>
+            </div>
+
+            <div id="fourthQuestion" class="hide">
+                <div class="forthbillede"></div>
+                <p>
+                    Jeg hader det her
+                </p>
+                <div id="true4" class="hide"></div>
+                <div id="false4" class="hide"></div>
+            </div>
+
+            <div id="correctAnswer4" class="hide">
+                <div class="forthbillede"></div>
+                <p>det er rigtigt fordi...</p>
+                <div id="correctslut" class="hide"></div>
+            </div>
+            <div id="falseAnswer4" class="hide">
+                <div class="forthbillede"></div>
+                <p>det er forkert fordi...</p>
+                <div id="falseslut" class="hide"></div>
+            </div>
+
+
+            <div id="resultat" class="hide">
+                <div class="resultatbillede"></div>
+                <p>
+                    Mange har forskellige idéer om hvad kreativitet er fordi.....
+                </p>
+
+                <div id="tryAgain" class="hide"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--
 <div class="myter_text">
 <h2>Kender du <span class="yellow">myterne</span> om kreativitet?
         <br><br>
@@ -276,7 +387,7 @@
     </div>
 </div>
 -->
-    </section>
+
 
     <footer>
         <h2> her skal footeren være</h2>
@@ -293,6 +404,4 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>

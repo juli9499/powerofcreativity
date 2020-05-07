@@ -495,6 +495,7 @@ a:hover {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 
 }
 
@@ -502,6 +503,20 @@ a:hover {
     font-size: 2rem;
     text-align: center;
 }
+
+.brush-stroke3 {
+    background-image: url(brushstrokes/pink3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 0px;
+    left: -40vw;
+    z-index: -1;
+
+}
+
 
 /*------------------------------ E K S P E R T V I D E O  -----------------------*/
 #ekspert_video {
@@ -522,7 +537,7 @@ a:hover {
 }
 
 
-.brush-stroke-pink {
+.brush-stroke2 {
     background-image: url(brushstrokes/blue1.png);
     transform: scaleX(-1);
     background-size: 100%;
@@ -530,7 +545,7 @@ a:hover {
     position: absolute;
     width: 400px;
     height: 200px;
-    top: 250px;
+    top: 270px;
     right: -250px;
     z-index: -1;
 
@@ -2097,6 +2112,24 @@ footer h2 {
     }
 
 
+    .brush-stroke2 {
+        top: 20px;
+        right: -400px;
+
+    }
+
+    .brush-stroke3 {
+        top: 0px;
+        left: -250px;
+
+    }
+
+    .brush-stroke-yellow {
+        top: 250px;
+        left: -150px;
+    }
+
+
 
 
 }
@@ -2119,6 +2152,9 @@ footer h2 {
         padding-top: 50px;
 
     }
+
+
+
 
 
 
@@ -2179,6 +2215,17 @@ footer h2 {
     .resultatbillede {
         width: 300px;
         height: 200px;
+    }
+
+    .brush-stroke3 {
+        top: 150px;
+        left: -250px;
+
+    }
+
+    .brush-stroke-yellow {
+        top: 400px;
+        left: -200px;
     }
 
 }

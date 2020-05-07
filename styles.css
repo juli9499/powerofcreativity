@@ -504,11 +504,9 @@ a:hover {
 }
 
 /*------------------------------ E K S P E R T V I D E O  -----------------------*/
-/*
-.ekspert_videoer {
-    grid-area: video;
+#ekspert_video {
+    overflow: hidden;
 }
-*/
 
 #ekspert_video h2 {
     margin-top: 0px;

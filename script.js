@@ -180,6 +180,7 @@ function Results() {
     console.log("resultat");
     document.querySelector("#resultat").classList.remove("hide");
     document.querySelector("#correctAnswer4").classList.add("hide");
+    document.querySelector("#falseAnswer4").classList.add("hide");
     document.querySelector("#correctslut").classList.add("hide");
     document.querySelector("#falseslut").classList.add("hide");
     document.querySelector("#falseslut").classList.add("hide");

@@ -2053,6 +2053,19 @@ time {
     margin-top: 5vh;
 }
 
+.bloom_video {
+    display: grid;
+}
+
+.bloom_video video {
+    justify-self: end;
+}
+
+
+.bloom_video {
+    /*    justify-items: end;*/
+}
+
 #bloom h2 {
     color: white;
 }
@@ -2158,7 +2171,8 @@ time {
 /*---------------------------------- F O O T E R -------------------------------*/
 .hashtagget {
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .tester {
@@ -2182,7 +2196,6 @@ footer {
 }
 
 .footer-web {
-    margin-top: 20vh;
     background-image: url(foto/footer-web.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -2196,7 +2209,6 @@ footer {
 }
 
 .footer-tablet {
-    margin-top: 20vh;
     background-image: url(foto/footer-tablet.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -2210,7 +2222,6 @@ footer {
 }
 
 .footer-mobile {
-    margin-top: 20vh;
     background-image: url(foto/footer-mobile.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -2225,7 +2236,6 @@ footer {
 }
 
 .footer-micro-mobile {
-    margin-top: 20vh;
     background-image: url(foto/footer-micro.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -2388,6 +2398,15 @@ footer h2 {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .bloom_video {
+        display: block;
+    }
+
+    .bloom_video video {
+        justify-self: center;
+    }
+
 
 
     .brush-stroke2 {

@@ -247,7 +247,7 @@ a:hover {
 /*---------------------------------- S P L A S H --------------------------------*/
 
 .splash_logo {
-    background-image: url(foto/logo_hvid.png);
+    background-image: url(foto/logo_hvid2.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -278,7 +278,7 @@ a:hover {
 /*--------------------------------- L I L L E    L O G O  ------------------------*/
 
 .lille_logo {
-    background-image: url(foto/logo_blaa.png);
+    background-image: url(foto/logo_blaa2.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;

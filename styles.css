@@ -1839,20 +1839,7 @@ input#slider::-ms-tooltip {
     padding: 10px;
 }
 
-.brush-stroke-10 {
-    background-image: url(brushstrokes/yellow2.png);
-    transform: scaleX(-1);
-    background-size: 100%;
-    transform: rotate(-20deg);
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 400px;
-    height: 250px;
-    top: 300px;
-    right: -150px;
-    z-index: 6;
 
-}
 
 .brush-stroke-11 {
     background-image: url(brushstrokes/pink2.png);
@@ -2479,6 +2466,10 @@ footer h2 {
 
 
 
+
+
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -2488,6 +2479,15 @@ footer h2 {
         margin-right: auto;
         width: 100%;
         max-height: 50vw;
+    }
+
+    .brush-stroke-11 {
+        width: 300px;
+        height: 150px;
+        top: 350px;
+        left: -180px;
+        z-index: 3;
+
     }
 
 
@@ -2531,6 +2531,8 @@ footer h2 {
         margin-left: 0;
         margin-right: 0;
     }
+
+
 
 
 

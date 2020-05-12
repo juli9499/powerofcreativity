@@ -69,6 +69,7 @@ h3 {
 p {
     font-family: 'Open Sans';
     color: #404040;
+    line-height: 25px;
 }
 
 /*Hoejre del er dobbelt so stor som venstre (1-2)*/
@@ -296,6 +297,7 @@ a:hover {
 /*------------------------------ I N T R O D U K T I O N  -----------------------*/
 #introduktion {
     position: relative;
+    overflow: hidden;
 }
 
 #introduktion h1 {
@@ -303,14 +305,26 @@ a:hover {
 }
 
 .brush-stroke-yellow {
+    background-image: url(brushstrokes/pink6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 350px;
+    left: -240px;
+    z-index: 1;
+}
+
+.brush-stroke-yellow2 {
     background-image: url(brushstrokes/yellow3.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     width: 400px;
     height: 200px;
-    top: 300px;
-    left: -70px;
+    top: 50px;
+    right: -170px;
     z-index: 1;
 }
 
@@ -338,6 +352,12 @@ a:hover {
 
 #hjernen h2 {
     color: white;
+    text-align: center;
+}
+
+.p-center {
+    color: white;
+    width: 500px;
     text-align: center;
 }
 
@@ -1658,12 +1678,29 @@ input#slider::-ms-tooltip {
 
 }
 
+
+
+.brush-stroke-pink1 {
+    background-image: url(brushstrokes/pink2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 270px;
+    left: -200px;
+    z-index: -1;
+
+}
+
 #ivaerksaetter {
     grid-template-columns: 1fr;
     column-gap: 0px;
     display: grid;
     padding-left: 10vw;
     padding-right: 10vw;
+    position: relative;
+    overflow: hidden;
 }
 
 #ivaerksaetter p {
@@ -1699,7 +1736,76 @@ input#slider::-ms-tooltip {
 
 
 
+.brush-stroke-9 {
+    background-image: url(brushstrokes/yellow2.png);
+    transform: scaleX(-1);
+    transform: rotate(-20deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 300px;
+    right: -150px;
+    z-index: 6;
 
+}
+
+.brush-stroke-8 {
+    background-image: url(brushstrokes/pink3.png);
+    transform: rotate(20deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 800px;
+    left: -150px;
+    z-index: 6;
+
+}
+
+.brush-stroke-7 {
+    background-image: url(brushstrokes/green5.png);
+    transform: scaleX(-1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 1200px;
+    right: -120px;
+    z-index: 6;
+
+}
+
+.brush-stroke-6 {
+    background-image: url(brushstrokes/blue4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 1700px;
+    left: -120px;
+    z-index: 6;
+
+}
+
+.brush-stroke-5 {
+    background-image: url(brushstrokes/pink6.png);
+    transform: scaleX(-1);
+    transform: rotate(30deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 2200px;
+    right: -120px;
+    z-index: 6;
+
+}
 
 
 /*------------------------------ T I D S L I N J E   ---------------------------*/
@@ -1731,6 +1837,35 @@ input#slider::-ms-tooltip {
 #tidslinje p {
     margin: 0px;
     padding: 10px;
+}
+
+.brush-stroke-10 {
+    background-image: url(brushstrokes/yellow2.png);
+    transform: scaleX(-1);
+    background-size: 100%;
+    transform: rotate(-20deg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 300px;
+    right: -150px;
+    z-index: 6;
+
+}
+
+.brush-stroke-11 {
+    background-image: url(brushstrokes/pink2.png);
+    transform: rotate(30deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 300px;
+    left: -150px;
+    z-index: 6;
+
 }
 
 /* INTRO SECTION
@@ -2015,7 +2150,10 @@ time {
 
 
 /*---------------------------------- F O O T E R -------------------------------*/
-
+.hashtagget {
+    text-align: center;
+    margin-top: 20vh;
+}
 
 .tester {
     margin-top: 300px;
@@ -2103,8 +2241,12 @@ footer {
 }
 
 .footer-tekst {
+
     justify-self: center;
     align-self: center;
+
+
+
 
 }
 
@@ -2255,8 +2397,12 @@ footer h2 {
     }
 
     .brush-stroke-yellow {
-        top: 250px;
+        top: 500px;
         left: -150px;
+    }
+
+    .brush-stroke-yellow2 {
+        display: none;
     }
 
     .footer-tablet {
@@ -2283,6 +2429,52 @@ footer h2 {
         text-align: center;
         font-size: 1rem;
     }
+
+    .brush-stroke-9 {
+        width: 400px;
+        height: 250px;
+        top: 300px;
+        right: -150px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-8 {
+        width: 400px;
+        height: 250px;
+        top: 850px;
+        left: -150px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-7 {
+        width: 400px;
+        height: 250px;
+        top: 1350px;
+        right: -120px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-6 {
+        width: 400px;
+        height: 250px;
+        top: 1900px;
+        left: -120px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-5 {
+        width: 400px;
+        height: 250px;
+        top: 2400px;
+        right: -120px;
+        z-index: -1;
+
+    }
+
 
 
 
@@ -2411,8 +2603,54 @@ footer h2 {
     }
 
     .brush-stroke-yellow {
-        top: 400px;
-        left: -200px;
+        top: 800px;
+        left: -260px;
+    }
+
+
+    .brush-stroke-9 {
+        width: 400px;
+        height: 250px;
+        top: 300px;
+        right: -150px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-8 {
+        width: 400px;
+        height: 250px;
+        top: 850px;
+        left: -150px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-7 {
+        width: 400px;
+        height: 250px;
+        top: 1450px;
+        right: -120px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-6 {
+        width: 400px;
+        height: 250px;
+        top: 2000px;
+        left: -120px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-5 {
+        width: 400px;
+        height: 250px;
+        top: 2550px;
+        right: -120px;
+        z-index: -1;
+
     }
 
 }
@@ -2434,6 +2672,52 @@ footer h2 {
 
     .footer-micro-mobile {
         display: grid;
+    }
+
+
+    .brush-stroke-9 {
+        width: 400px;
+        height: 250px;
+        top: 320px;
+        right: -150px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-8 {
+        width: 400px;
+        height: 250px;
+        top: 1000px;
+        left: -150px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-7 {
+        width: 400px;
+        height: 250px;
+        top: 1600px;
+        right: -120px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-6 {
+        width: 400px;
+        height: 250px;
+        top: 2250px;
+        left: -120px;
+        z-index: -1;
+
+    }
+
+    .brush-stroke-5 {
+        width: 400px;
+        height: 250px;
+        top: 2930px;
+        right: -120px;
+        z-index: -1;
+
     }
 
 

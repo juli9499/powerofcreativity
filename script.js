@@ -1,4 +1,5 @@
 //-------------------------------------- H J E R N E N  -------------------------------
+//-------------------------------------- H J E R N E N  -------------------------------
 
 function selectHotspot(e) {
     const clickedHotspot = e.target.parentElement;

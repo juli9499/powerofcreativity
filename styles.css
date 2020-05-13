@@ -1130,7 +1130,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 1500px;
+    top: 1300px;
     left: -150px;
     z-index: 1;
 }
@@ -1143,7 +1143,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 1000px;
+    top: 800px;
     right: -150px;
     z-index: 1;
 }
@@ -1156,7 +1156,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 1900px;
+    top: 1650px;
     right: -150px;
     z-index: 1;
 }
@@ -1169,7 +1169,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 2300px;
+    top: 2100px;
     left: -150px;
     z-index: 1;
 }
@@ -1182,7 +1182,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 2800px;
+    top: 2600px;
     right: -150px;
     z-index: 1;
 }
@@ -1195,7 +1195,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 3100px;
+    top: 2900px;
     left: -150px;
     z-index: 1;
 }

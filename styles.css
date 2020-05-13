@@ -1065,6 +1065,7 @@ input#slider::-ms-tooltip {
     right: -120px;
     z-index: 2;
 
+
 }
 
 
@@ -1075,6 +1076,7 @@ input#slider::-ms-tooltip {
     font-family: 'Roboto';
     display: grid;
     overflow: hidden;
+    position: relative;
 }
 
 .tidslinje_intro {
@@ -1082,6 +1084,10 @@ input#slider::-ms-tooltip {
     justify-self: center;
     text-align: center;
     margin-top: 2vw;
+}
+
+.timeline {
+    overflow: hidden;
 }
 
 
@@ -1111,8 +1117,96 @@ input#slider::-ms-tooltip {
     height: 250px;
     top: 300px;
     left: -150px;
-    z-index: 6;
+    z-index: 1;
 
+}
+
+
+.brush-stroke-12 {
+    background-image: url(brushstrokes/green1.png);
+    transform: rotate(-10deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 1500px;
+    left: -150px;
+    z-index: 1;
+}
+
+.brush-stroke-13 {
+    background-image: url(brushstrokes/yellow5.png);
+    transform: scaleX(-1) rotate(20deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 1000px;
+    right: -150px;
+    z-index: 1;
+}
+
+.brush-stroke-14 {
+    background-image: url(brushstrokes/blue5.png);
+    transform: scaleX(-1) rotate(20deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 1900px;
+    right: -150px;
+    z-index: 1;
+}
+
+.brush-stroke-15 {
+    background-image: url(brushstrokes/yellow5.png);
+    transform: rotate(20deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 2300px;
+    left: -150px;
+    z-index: 1;
+}
+
+.brush-stroke-16 {
+    background-image: url(brushstrokes/pink6.png);
+    transform: rotate(20deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 2800px;
+    right: -150px;
+    z-index: 1;
+}
+
+.brush-stroke-17 {
+    background-image: url(brushstrokes/blue4.png);
+    transform: rotate(20deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 3100px;
+    left: -150px;
+    z-index: 1;
+}
+
+
+
+.viewwidth {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    /*    position: relative;*/
 }
 
 /* INTRO SECTION
@@ -1124,6 +1218,7 @@ input#slider::-ms-tooltip {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+
 }
 
 
@@ -1136,6 +1231,7 @@ input#slider::-ms-tooltip {
 .timeline ul {
     /*    background: #456990;*/
     /*    padding: 50px 0;*/
+
 }
 
 .timeline ul li {
@@ -1145,6 +1241,9 @@ input#slider::-ms-tooltip {
     margin: 0 auto;
     /*    padding-top: 50px;*/
     background: #404040;
+    z-index: 2;
+
+
 
 }
 
@@ -1283,10 +1382,14 @@ time {
 
 #bevaegelsen {
     display: grid;
+    position: relative;
+    overflow: hidden;
 
 }
 
-
+.intro_tekst {
+    overflow: hidden;
+}
 
 
 .brush-stroke-b1 {
@@ -1297,7 +1400,7 @@ time {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 500px;
+    top: 300px;
     right: -150px;
     z-index: 1;
 }
@@ -1816,11 +1919,8 @@ footer h2 {
 
 
     .brush-stroke-11 {
-        width: 300px;
-        height: 150px;
         top: 350px;
         left: -180px;
-        z-index: 3;
 
     }
 

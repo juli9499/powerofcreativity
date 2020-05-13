@@ -699,6 +699,15 @@ a:hover {
     margin: 0 auto;
 }
 
+.fifthbillede {
+    background-image: url(foto/bill-50.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
 .resultatbillede {
     background-image: url(foto/placeholder6.jpeg);
     background-size: cover;
@@ -711,7 +720,8 @@ a:hover {
 #true1,
 #true2,
 #true3,
-#true4 {
+#true4,
+#true5 {
     display: inline-block;
     background-image: url(foto/sandt.png);
     background-repeat: no-repeat;
@@ -724,7 +734,8 @@ a:hover {
 #false1,
 #false2,
 #false3,
-#false4 {
+#false4,
+#false5 {
     display: inline-block;
     background-image: url(foto/falsk.png);
     background-repeat: no-repeat;
@@ -742,6 +753,8 @@ a:hover {
 #nextQuestionFalse3,
 #nextQuestionTrue4,
 #nextQuestionFalse4,
+#nextQuestionTrue5,
+#nextQuestionFalse5,
 #correctslut,
 #falseslut {
     background-image: url(foto/naeste.png);

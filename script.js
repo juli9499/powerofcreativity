@@ -176,6 +176,12 @@ function falseQ4() {
     document.querySelector("#correctslut").addEventListener("click", Results);
 }
 
+function fifthQuestion() {
+    console.log("femte");
+    document.querySelector("#")
+}
+
+
 function Results() {
     console.log("resultat");
     document.querySelector("#resultat").classList.remove("hide");
@@ -187,6 +193,7 @@ function Results() {
     document.querySelector("#tryAgain").classList.remove("hide");
     document.querySelector("#tryAgain").addEventListener("click", showStart);
 }
+
 
 
 

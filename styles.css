@@ -708,6 +708,15 @@ a:hover {
     margin: 0 auto;
 }
 
+.sixthbillede {
+    background-image: url(foto/disney-50.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
 .resultatbillede {
     background-image: url(foto/placeholder6.jpeg);
     background-size: cover;
@@ -721,7 +730,8 @@ a:hover {
 #true2,
 #true3,
 #true4,
-#true5 {
+#true5,
+#true6 {
     display: inline-block;
     background-image: url(foto/sandt.png);
     background-repeat: no-repeat;
@@ -735,7 +745,8 @@ a:hover {
 #false2,
 #false3,
 #false4,
-#false5 {
+#false5,
+#false6 {
     display: inline-block;
     background-image: url(foto/falsk.png);
     background-repeat: no-repeat;
@@ -755,8 +766,8 @@ a:hover {
 #nextQuestionFalse4,
 #nextQuestionTrue5,
 #nextQuestionFalse5,
-#correctslut,
-#falseslut {
+#nextQuestionTrue6,
+#nextQuestionFalse6 {
     background-image: url(foto/naeste.png);
     background-repeat: no-repeat;
     cursor: pointer;

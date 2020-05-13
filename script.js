@@ -162,8 +162,8 @@ function correctQ4() {
     document.querySelector("#fourthQuestion").classList.add("hide");
     document.querySelector("#true4").classList.add("hide");
     document.querySelector("#false4").classList.add("hide");
-    document.querySelector("#correctslut").classList.remove("hide");
-    document.querySelector("#correctslut").addEventListener("click", Results);
+    document.querySelector("#nextQuestionTrue4").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue4").addEventListener("click", fifthQuestion);
 }
 
 function falseQ4() {
@@ -172,25 +172,87 @@ function falseQ4() {
     document.querySelector("#fourthQuestion").classList.add("hide");
     document.querySelector("#true4").classList.add("hide");
     document.querySelector("#false4").classList.add("hide");
-    document.querySelector("#falseslut").classList.remove("hide");
-    document.querySelector("#falseslut").addEventListener("click", Results);
-    document.querySelector("#correctslut").addEventListener("click", Results);
+    document.querySelector("#nextQuestionFalse4").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse4").addEventListener("click",fifthQuestion);
+    document.querySelector("#correctslut").addEventListener("click", fifthQuestion);
 }
 
 function fifthQuestion() {
     console.log("femte");
-    document.querySelector("#")
+    document.querySelector("#fifthQuestion").classList.remove("hide");
+    document.querySelector("#true5").classList.remove("hide");
+    document.querySelector("#false5").classList.remove("hide");
+    document.querySelector("#correctAnswer4").classList.add("hide");
+    document.querySelector("#falseAnswer4").classList.add("hide");
+    document.querySelector("#nextQuestionTrue4").classList.add("hide");
+    document.querySelector("#nextQuestionFalse4").classList.add("hide");
+
+    document.querySelector("#true5").addEventListener("click", correctQ5);
+    document.querySelector("#false5").addEventListener("click", falseQ5);
+
 }
 
+function correctQ5() {
+    console.log("rigtigt");
+    document.querySelector("#correctAnswer5").classList.remove("hide");
+    document.querySelector("#fifthQuestion").classList.add("hide");
+    document.querySelector("#true5").classList.add("hide");
+    document.querySelector("#false5").classList.add("hide");
+    document.querySelector("#nextQuestionTrue5").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue5").addEventListener("click", sixthQuestion);
+}
+
+function falseQ5() {
+    console.log("forkert");
+    document.querySelector("#falseAnswer5").classList.remove("hide");
+    document.querySelector("#fifthQuestion").classList.add("hide");
+    document.querySelector("#true5").classList.add("hide");
+    document.querySelector("#false5").classList.add("hide");
+    document.querySelector("#nextQuestionFalse5").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse5").addEventListener("click", sixthQuestion);
+
+}
+
+function sixthQuestion() {
+    console.log("sjette");
+    document.querySelector("#sixthQuestion").classList.remove("hide");
+    document.querySelector("#true6").classList.remove("hide");
+    document.querySelector("#false6").classList.remove("hide");
+    document.querySelector("#correctAnswer5").classList.add("hide");
+    document.querySelector("#falseAnswer5").classList.add("hide");
+    document.querySelector("#nextQuestionTrue5").classList.add("hide");
+    document.querySelector("#nextQuestionFalse5").classList.add("hide");
+
+    document.querySelector("#true6").addEventListener("click", correctQ6);
+    document.querySelector("#false6").addEventListener("click", falseQ6);
+
+}
+
+function correctQ6() {
+    console.log("rigtigt");
+    document.querySelector("#correctAnswer6").classList.remove("hide");
+    document.querySelector("#sixthQuestion").classList.add("hide");
+    document.querySelector("#true6").classList.add("hide");
+    document.querySelector("#false6").classList.add("hide");
+    document.querySelector("#nextQuestionTrue6").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue6").addEventListener("click", Results);
+}
+
+function falseQ6() {
+    console.log("forkert");
+    document.querySelector("#falseAnswer6").classList.remove("hide");
+    document.querySelector("#sixthQuestion").classList.add("hide");
+    document.querySelector("#true6").classList.add("hide");
+    document.querySelector("#false6").classList.add("hide");
+    document.querySelector("#nextQuestionFalse6").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse6").addEventListener("click", Results);
+}
 
 function Results() {
     console.log("resultat");
     document.querySelector("#resultat").classList.remove("hide");
-    document.querySelector("#correctAnswer4").classList.add("hide");
-    document.querySelector("#falseAnswer4").classList.add("hide");
-    document.querySelector("#correctslut").classList.add("hide");
-    document.querySelector("#falseslut").classList.add("hide");
-    document.querySelector("#falseslut").classList.add("hide");
+    document.querySelector("#correctAnswer6").classList.add("hide");
+    document.querySelector("#falseAnswer6").classList.add("hide");
     document.querySelector("#tryAgain").classList.remove("hide");
     document.querySelector("#tryAgain").addEventListener("click", showStart);
 }

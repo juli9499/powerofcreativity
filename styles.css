@@ -1567,9 +1567,32 @@ time {
 }*/
 
 
+/*---------------------------------- L Æ S   M ER E -------------------------------*/
 
+.laesmere-bund {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 280px;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.laesmere-bund h3 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
 
+.laesmere-knap {
+
+    width: 200px;
+    height: 80px;
+}
+
+.laesmere-bund a {
+    justify-self: center;
+}
 
 /*---------------------------------- F O O T E R -------------------------------*/
 .hashtagget {

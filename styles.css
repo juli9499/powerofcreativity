@@ -671,7 +671,7 @@ a:hover {
 }
 
 #startbillede {
-    background-image: url(foto/placeholder1.jpg);
+    background-image: url(foto/myte1.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -681,7 +681,7 @@ a:hover {
 }
 
 .firstbillede {
-    background-image: url(foto/creativity.jpg);
+    background-image: url(foto/myte2.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -690,7 +690,7 @@ a:hover {
 }
 
 .secondbillede {
-    background-image: url(foto/placeholder3.jpg);
+    background-image: url(foto/myte3.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -699,7 +699,7 @@ a:hover {
 }
 
 .thirdbillede {
-    background-image: url(foto/placeholder4.jpg);
+    background-image: url(foto/myte4.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -708,7 +708,7 @@ a:hover {
 }
 
 .forthbillede {
-    background-image: url(foto/placeholder5.jpg);
+    background-image: url(foto/myte5.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -717,7 +717,7 @@ a:hover {
 }
 
 .fifthbillede {
-    background-image: url(foto/bill-50.jpg);
+    background-image: url(foto/myte6.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -726,7 +726,7 @@ a:hover {
 }
 
 .sixthbillede {
-    background-image: url(foto/disney-50.jpg);
+    background-image: url(foto/myte7.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -735,7 +735,7 @@ a:hover {
 }
 
 .resultatbillede {
-    background-image: url(foto/placeholder6.jpeg);
+    background-image: url(foto/myte8.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;

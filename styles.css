@@ -289,6 +289,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 
 }
 
@@ -474,7 +475,7 @@ a:hover {
     padding: 0 0 1.1em 0;
     width: 16em;
     max-width: 50vw;
-    background-color: white;
+    background-color: #F2F2F2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-family: "Open Sans", sans-serif;
     font-size: 14.5px;
@@ -490,9 +491,9 @@ a:hover {
 .lg-hotspot__label h4 {
     margin: 0;
     padding: 0.65em 24px;
-    background-color: #555;
+    background-color: #84C52B;
     font-size: 1.1em;
-    font-weight: normal;
+    font-weight: 3;
     letter-spacing: 0.02em;
     color: white;
     border-radius: 2px 2px 0 0;

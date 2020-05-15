@@ -273,8 +273,8 @@ a:hover {
     z-index: 1;
     width: 50px;
     height: 60px;
-    top: 620px;
-    bottom: 0;
+    /*    top: 620px;*/
+    bottom: 50px;
     left: 0;
     right: 0;
     margin-right: auto;
@@ -328,7 +328,7 @@ a:hover {
     width: 400px;
     height: 200px;
     top: 100px;
-    left: -550px;
+    left: -40vw;
     z-index: 1;
 }
 
@@ -1111,6 +1111,36 @@ input#slider::-ms-tooltip {
 
 /*------------------------------ T I D S L I N J E   ---------------------------*/
 
+.brush-stroke22 {
+    background-image: url(brushstrokes/blue1.png);
+    transform: scaleX(-1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: -50px;
+    right: -360px;
+    z-index: -1;
+
+}
+
+
+#ekspert_video2 {
+    overflow: hidden;
+
+}
+
+#ekspert_video2 h1 {
+    margin-top: 0px;
+}
+
+.ekspert_videoer2 {
+    align-self: center;
+}
+
+
+
 
 #tidslinje {
     font-family: 'Roboto';
@@ -1760,10 +1790,30 @@ footer h2 {
 
 
 /*------------------------------ M E D I A Q U E R I E S ------------------------*/
+
+@media screen and (min-width: 2000px) {
+    .splash_logo {
+        z-index: 1;
+        width: 680px;
+        height: 500px;
+        top: 18vh;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10vw;
+
+    }
+}
+
 @media screen and (max-width: 1400px) {
+    /*
     .mouse-scroll {
         top: 520px;
     }
+*/
+
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -1778,7 +1828,7 @@ footer h2 {
     .splash_logo {
         width: 200px;
         height: 150px;
-        top: 200px;
+        top: 30vh;
     }
 
     .klode_gif {
@@ -1888,6 +1938,11 @@ footer h2 {
 
     }
 
+    .brush-stroke22 {
+        display: none;
+
+    }
+
     .brush-stroke3 {
         top: 0px;
         left: -250px;
@@ -1896,11 +1951,7 @@ footer h2 {
 
 
 
-    .brush-stroke-yellow {
-        top: 000px;
-        left: -250px;
-        z-index: -1;
-    }
+
 
     .brush-stroke-yellow2 {
         display: none;
@@ -2133,8 +2184,9 @@ footer h2 {
     }
 
     .brush-stroke-yellow {
-        top: 100px;
-        left: -300px;
+        top: 150px;
+        left: -70vw;
+        z-index: -1;
     }
 
     .brush-stroke-9 {
@@ -2203,6 +2255,11 @@ footer h2 {
         display: grid;
     }
 
+    .brush-stroke-yellow {
+        top: 180px;
+        left: -85vw;
+        z-index: -1;
+    }
 
     .brush-stroke-9 {
         width: 400px;

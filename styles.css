@@ -273,13 +273,12 @@ a:hover {
     z-index: 1;
     width: 50px;
     height: 60px;
-    top: 500px;
+    top: 620px;
     bottom: 0;
     left: 0;
     right: 0;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10vw;
 }
 
 .splash_background {
@@ -328,8 +327,8 @@ a:hover {
     position: absolute;
     width: 400px;
     height: 200px;
-    top: 350px;
-    left: -240px;
+    top: 100px;
+    left: -550px;
     z-index: 1;
 }
 
@@ -557,7 +556,6 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden;
 
 }
 
@@ -1762,6 +1760,11 @@ footer h2 {
 
 
 /*------------------------------ M E D I A Q U E R I E S ------------------------*/
+@media screen and (max-width: 1400px) {
+    .mouse-scroll {
+        top: 520px;
+    }
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -1769,6 +1772,8 @@ footer h2 {
     .container12 {
         grid-template-columns: 1fr;
     }
+
+
 
     .splash_logo {
         width: 200px;
@@ -1892,8 +1897,9 @@ footer h2 {
 
 
     .brush-stroke-yellow {
-        top: 500px;
-        left: -150px;
+        top: 000px;
+        left: -250px;
+        z-index: -1;
     }
 
     .brush-stroke-yellow2 {
@@ -2127,10 +2133,9 @@ footer h2 {
     }
 
     .brush-stroke-yellow {
-        top: 800px;
-        left: -260px;
+        top: 100px;
+        left: -300px;
     }
-
 
     .brush-stroke-9 {
         width: 400px;

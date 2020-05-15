@@ -248,12 +248,12 @@ a:hover {
 /*---------------------------------- S P L A S H --------------------------------*/
 
 .splash_logo {
-    background-image: url(foto/logo_hvid2.png);
+    background-image: url(foto/logo_hvidnyt.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     z-index: 1;
-    width: 400px;
+    width: 420px;
     height: 300px;
     top: 0;
     bottom: 0;
@@ -263,6 +263,23 @@ a:hover {
     margin-left: auto;
     margin-top: 10vw;
 
+}
+
+.mouse-scroll {
+    background-image: url(foto/scroll-mouse.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    width: 70px;
+    height: 80px;
+    top: 500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vw;
 }
 
 .splash_background {

@@ -2175,8 +2175,8 @@ footer h2 {
         background-color: #F2F2F2;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         font-family: "Open Sans", sans-serif;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 10px;
+        line-height: 13px;
         z-index: -1;
         pointer-events: none;
         border-radius: 2px;
@@ -2198,8 +2198,8 @@ footer h2 {
 
     .lg-hotspot__label p {
         margin: 0;
-        padding: 5ps 5px 0 5px;
-        line-height: 1.1rem;
+        padding: 0em 5px 0 5px;
+        line-height: 1.2rem;
         color: #333;
     }
 

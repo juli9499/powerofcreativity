@@ -340,7 +340,7 @@ a:hover {
     position: absolute;
     width: 400px;
     height: 200px;
-    top: 50px;
+    top: 100px;
     right: -170px;
     z-index: 1;
 }
@@ -614,8 +614,8 @@ a:hover {
     position: absolute;
     width: 400px;
     height: 200px;
-    top: 270px;
-    right: -250px;
+    top: 350px;
+    right: -300px;
     z-index: -1;
 
 }
@@ -1846,6 +1846,12 @@ footer h2 {
 
     }
 
+    .brush-stroke2 {
+        top: 20px;
+        right: -400px;
+
+    }
+
 
 }
 
@@ -1972,11 +1978,7 @@ footer h2 {
 
 
 
-    .brush-stroke2 {
-        top: 20px;
-        right: -400px;
 
-    }
 
     .brush-stroke22 {
         display: none;

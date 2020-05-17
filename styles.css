@@ -364,7 +364,7 @@ a:hover {
 
 #hjernen {
     background-color: #00242A;
-    overflow: hidden;
+    /*    overflow: hidden;*/
 }
 
 #hjernen h2 {
@@ -2151,7 +2151,76 @@ footer h2 {
     }
 
 
+    .lg-hotspot__button:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        content: "";
+        display: block;
+        height: 16.8px;
+        width: 16.8px;
+        border-radius: 100%;
+        border: 3px solid white;
+        background-color: #00242A;
+        transition: border-color 1s linear;
+    }
 
+    .lg-hotspot__label {
+        position: absolute;
+        padding: 0 0 1.1em 0;
+        width: 14em;
+        max-width: 50vw;
+        background-color: #F2F2F2;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        font-family: "Open Sans", sans-serif;
+        font-size: 10px;
+        line-height: 13px;
+        z-index: -1;
+        pointer-events: none;
+        border-radius: 2px;
+        user-select: none;
+        opacity: 0;
+        transition: all 0.1s linear;
+    }
+
+    .lg-hotspot__label h4 {
+        margin: 0;
+        padding: 0.65em 24px;
+        background-color: #FF4677;
+        font-size: 1.2em;
+        font-weight: 3;
+        letter-spacing: 0em;
+        color: white;
+        border-radius: 2px 2px 0 0;
+    }
+
+    .lg-hotspot__label p {
+        margin: 0;
+        padding: 0em 5px 0 5px;
+        color: #333;
+    }
+
+    .lg-hotspot--top-left .lg-hotspot__label {
+        top: 24px;
+        left: 4px;
+    }
+
+    .lg-hotspot--top-right .lg-hotspot__label {
+        top: 24px;
+        right: 4px;
+    }
+
+    .lg-hotspot--bottom-right .lg-hotspot__label {
+        right: 24px;
+        bottom: 4px;
+    }
+
+    .lg-hotspot--bottom-left .lg-hotspot__label {
+        bottom: 24px;
+        left: 4px;
+    }
 
 
 

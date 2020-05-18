@@ -1,5 +1,3 @@
-
-
 //-------------------------------------- H J E R N E N  -------------------------------
 //-------------------------------------- H J E R N E N  -------------------------------
 
@@ -41,16 +39,16 @@ function showStart() {
     document.querySelector("#beginningQuiz").classList.remove("hide");
     document.querySelector("#submit").classList.add("pulse");
     document.querySelector("#submit").addEventListener("click", hideSubmit);
-    
-    
-    
+
+
+
 }
 
 function hideSubmit() {
     document.querySelector("#beginningQuiz").classList.add("dissappear");
     document.querySelector("#beginningQuiz").addEventListener("animationend", startQuiz);
 
-    
+
 }
 
 function startQuiz() {
@@ -365,3 +363,120 @@ function beforeAfter() {
     window.addEventListener("scroll", callbackFunc);
 
 })();
+
+
+
+
+
+
+
+
+
+//------------------------------------ K R E A T I V   Q U I Z -------------------------------
+
+window.onload = function () {
+
+    var questionArea = document.getElementsByClassName('questions')[0],
+        answerArea = document.getElementsByClassName('answers')[0],
+        checker = document.getElementsByClassName('checker')[0],
+        current = 0,
+
+        // An object that holds all the questions + possible answers.
+        // In the array --> last digit gives the right answer position
+        allQuestions = {
+            'Hvem kan blive iværksætter?': ['En der har mange penge', 'En der har mange kontakter', 'En der har en idé, som kan føres ud i livet', 'En der har studeret business på universitetet', 2],
+
+            'Børn har ekstraordinære evner når det kommer til…': ['Skrive kunstskaber', 'Innovation', 'Matematik', 'Stå på hænder', 1],
+
+            'Hvordan kan man blive en bedre innovator? ': ['Vente på at få en god idé/åbenbaring', 'Læs om andres idéer', 'Træne sin kreativitet', 'Gør ingenting', 2],
+
+            'Hvorfor er iværksætteri vigtigt?': ['Man tjener mange penge på det', 'Vi har brug for flere materielle produkter i verden', 'Verden er under konstant forandring og vi har brug for nye innovative idéer for at følge med i udviklingen', 'Der er ikke nok iværksætterer i verdenen', 2],
+
+            'For at komme op med en original idé skal man være forberedt på hvad?': ['Ikke fortælle nogen om det. Andre vil prøve at stjæle din idé', 'At man kan lave mange fejl undervejs', 'At man er god til at tegne', 'At det ikke tagerr lang tid', 1]
+        };
+
+    function loadQuestion(curr) {
+        // This function loads all the question into the questionArea
+        // It grabs the current question based on the 'current'-variable
+
+        var question = Object.keys(allQuestions)[curr];
+
+        questionArea.innerHTML = '';
+        questionArea.innerHTML = question;
+    }
+
+    function loadAnswers(curr) {
+        // This function loads all the possible answers of the given question
+        // It grabs the needed answer-array with the help of the current-variable
+        // Every answer is added with an 'onclick'-function
+
+        var answers = allQuestions[Object.keys(allQuestions)[curr]];
+
+        answerArea.innerHTML = '';
+
+        for (var i = 0; i < answers.length - 1; i += 1) {
+            var createDiv = document.createElement('div'),
+                text = document.createTextNode(answers[i]);
+
+            createDiv.appendChild(text);
+            createDiv.addEventListener("click", checkAnswer(i, answers));
+
+
+            answerArea.appendChild(createDiv);
+        }
+    }
+
+    function checkAnswer(i, arr) {
+        // This is the function that will run, when clicked on one of the answers
+        // Check if givenAnswer is sams as the correct one
+        // After this, check if it's the last question:
+        // If it is: empty the answerArea and let them know it's done.
+
+        return function () {
+            var givenAnswer = i,
+                correctAnswer = arr[arr.length - 1];
+
+            if (givenAnswer === correctAnswer) {
+                addChecker(true);
+            } else {
+                addChecker(false);
+            }
+
+            if (current < Object.keys(allQuestions).length - 1) {
+                current += 1;
+
+                loadQuestion(current);
+                loadAnswers(current);
+            } else {
+                questionArea.innerHTML = 'Done';
+                answerArea.innerHTML = '';
+            }
+
+        };
+    }
+
+    function addChecker(bool) {
+        // This function adds a div element to the page
+        // Used to see if it was correct or false
+
+        var createDiv = document.createElement('div'),
+            txt = document.createTextNode(current + 1);
+
+        createDiv.appendChild(txt);
+
+        if (bool) {
+
+            createDiv.className += 'correct';
+            checker.appendChild(createDiv);
+        } else {
+            createDiv.className += 'false';
+            checker.appendChild(createDiv);
+        }
+    }
+
+
+    // Start the quiz right away
+    loadQuestion(current);
+    loadAnswers(current);
+
+};

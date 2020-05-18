@@ -799,7 +799,7 @@ a:hover {
     background-size: 100%;
     width: 170px;
     height: 100px;
-    
+
 }
 
 #nextQuestionTrue,
@@ -854,7 +854,7 @@ a:hover {
         transform: scale(1);
     }
 }
-  
+
 
 .dissappear {
     animation-name: dissappear_kf;
@@ -891,7 +891,7 @@ a:hover {
         transform: scale(1);
     }
 }
-  
+
 
 
 /*---------------------------------- I M A G E   S L I D E R -------------------------------*/
@@ -1545,6 +1545,120 @@ time {
         border-color: transparent #17BAD1 transparent transparent;
     }
 }
+
+
+/*--------------------------- K R E A T I V   Q U I Z  -------------------------------*/
+
+#kreativquiz {
+    background-color: #00242A;
+    width: auto;
+}
+
+#kreativquiz p {
+    color: #F6F6F6;
+}
+
+#kreativquiz h2 {
+    color: #F6F6F6;
+}
+
+#kreativquiz h3 {
+    color: #F6F6F6;
+}
+
+/*#kreativquiz {*/
+padding-bottom: 20px;
+}
+
+.wrapper {
+    width: 430px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#quiz {
+    background-color: #17BAD1;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 2%;
+    color: #fff;
+    text-align: center;
+    /*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+}
+
+
+
+#quiz > h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+
+.questions {
+    font-size: 1.3rem;
+    font-weight: 700;
+    /*    font-style: italic;*/
+    /*    border-top: 1px solid #FFFFFF;*/
+    border-bottom: 1px solid #FFFFFF;
+    padding: 20px;
+    font-family: 'Roboto';
+}
+
+
+
+.answers div {
+    padding: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto';
+}
+
+.answers div:hover {
+    cursor: pointer;
+    color: #FFCB00;
+}
+
+.answers {
+    padding: 0px 0 10px 0px;
+}
+
+.answers div {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    border-top: 1px solid #ffffff;
+}
+
+.answers div:first-child {
+    border: none;
+}
+
+.checker {
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.correct,
+.false {
+    background-color: #83C52B;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 4px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.false {
+    background-color: #FF4677;
+}
+
+
+
+
 
 /*---------------------------------- B E V Æ G E L S E N    B A G  -------------------------------*/
 
@@ -2318,6 +2432,10 @@ footer h2 {
         width: 100%;
     }
 
+    .wrapper {
+        width: 330px;
+    }
+
     .flower_picture {
         background-image: url(foto/malte1.gif);
         background-repeat: no-repeat;
@@ -2508,7 +2626,15 @@ footer h2 {
 
     }
 
+    .wrapper {
+        width: 300px;
+    }
+}
 
 
 
+@media screen and (max-width: 350px) {
+    .wrapper {
+        width: 250px;
+    }
 }

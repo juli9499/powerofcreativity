@@ -1,3 +1,5 @@
+
+
 //-------------------------------------- H J E R N E N  -------------------------------
 //-------------------------------------- H J E R N E N  -------------------------------
 
@@ -37,6 +39,7 @@ function sidenVises() {
 function showStart() {
     document.querySelector("#resultat").classList.add("hide");
     document.querySelector("#beginningQuiz").classList.remove("hide");
+    document.querySelector("#submit").classList.add("pulse");
     document.querySelector("#submit").addEventListener("click", hideSubmit);
     
     
@@ -64,6 +67,7 @@ function correctQ1() {
     document.querySelector("#firstQuestion").classList.add("hide");
     document.querySelector(".firstbillede").classList.remove("hide");
     document.querySelector("#nextQuestionTrue").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue").classList.add("pulse");
     document.querySelector("#nextQuestionTrue").addEventListener("click", slideOutAnimation1);
 }
 
@@ -74,6 +78,7 @@ function falseQ1() {
     document.querySelector("#true1").classList.add("hide");
     document.querySelector("#false1").classList.add("hide");
     document.querySelector("#nextQuestionFalse").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse").classList.add("pulse");
     document.querySelector("#nextQuestionFalse").addEventListener("click", slideOutAnimation1);
 }
 
@@ -103,6 +108,7 @@ function correctQ2() {
     document.querySelector("#true2").classList.add("hide");
     document.querySelector("#false2").classList.add("hide");
     document.querySelector("#nextQuestionTrue2").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue2").classList.add("pulse");
     document.querySelector("#nextQuestionTrue2").addEventListener("click", slideOutAnimation2);
 }
 
@@ -112,6 +118,7 @@ function falseQ2() {
     document.querySelector("#true2").classList.add("hide");
     document.querySelector("#false2").classList.add("hide");
     document.querySelector("#nextQuestionFalse2").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse2").classList.add("pulse");
     document.querySelector("#nextQuestionFalse2").addEventListener("click", slideOutAnimation2);
 }
 
@@ -143,6 +150,7 @@ function correctQ3() {
     document.querySelector("#true3").classList.add("hide");
     document.querySelector("#false3").classList.add("hide");
     document.querySelector("#nextQuestionTrue3").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue3").classList.add("pulse");
     document.querySelector("#nextQuestionTrue3").addEventListener("click", slideOutAnimation3);
 }
 
@@ -152,6 +160,7 @@ function falseQ3() {
     document.querySelector("#true3").classList.add("hide");
     document.querySelector("#false3").classList.add("hide");
     document.querySelector("#nextQuestionFalse3").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse3").classList.add("pulse");
     document.querySelector("#nextQuestionFalse3").addEventListener("click", slideOutAnimation3);
 }
 
@@ -186,6 +195,7 @@ function correctQ4() {
     document.querySelector("#true4").classList.add("hide");
     document.querySelector("#false4").classList.add("hide");
     document.querySelector("#nextQuestionTrue4").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue4").classList.add("pulse");
     document.querySelector("#nextQuestionTrue4").addEventListener("click", slideOutAnimation4);
 }
 
@@ -196,6 +206,7 @@ function falseQ4() {
     document.querySelector("#true4").classList.add("hide");
     document.querySelector("#false4").classList.add("hide");
     document.querySelector("#nextQuestionFalse4").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse4").classList.add("pulse");
     document.querySelector("#nextQuestionFalse4").addEventListener("click", slideOutAnimation4);
 }
 
@@ -229,6 +240,7 @@ function correctQ5() {
     document.querySelector("#true5").classList.add("hide");
     document.querySelector("#false5").classList.add("hide");
     document.querySelector("#nextQuestionTrue5").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue5").classList.add("pulse");
     document.querySelector("#nextQuestionTrue5").addEventListener("click", slideOutAnimation5);
 }
 
@@ -239,6 +251,7 @@ function falseQ5() {
     document.querySelector("#true5").classList.add("hide");
     document.querySelector("#false5").classList.add("hide");
     document.querySelector("#nextQuestionFalse5").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse5").classList.add("pulse");
     document.querySelector("#nextQuestionFalse5").addEventListener("click", slideOutAnimation5);
 
 }
@@ -260,7 +273,6 @@ function sixthQuestion() {
     document.querySelector("#falseAnswer5").classList.add("hide");
     document.querySelector("#nextQuestionTrue5").classList.add("hide");
     document.querySelector("#nextQuestionFalse5").classList.add("hide");
-
     document.querySelector("#true6").addEventListener("click", correctQ6);
     document.querySelector("#false6").addEventListener("click", falseQ6);
 
@@ -273,6 +285,7 @@ function correctQ6() {
     document.querySelector("#true6").classList.add("hide");
     document.querySelector("#false6").classList.add("hide");
     document.querySelector("#nextQuestionTrue6").classList.remove("hide");
+    document.querySelector("#nextQuestionTrue6").classList.add("pulse");
     document.querySelector("#nextQuestionTrue6").addEventListener("click", slideOutAnimation6);
 }
 
@@ -283,6 +296,7 @@ function falseQ6() {
     document.querySelector("#true6").classList.add("hide");
     document.querySelector("#false6").classList.add("hide");
     document.querySelector("#nextQuestionFalse6").classList.remove("hide");
+    document.querySelector("#nextQuestionFalse6").classList.add("pulse");
     document.querySelector("#nextQuestionFalse6").addEventListener("click", slideOutAnimation6);
 }
 
@@ -300,6 +314,7 @@ function Results() {
     document.querySelector("#correctAnswer6").classList.add("hide");
     document.querySelector("#falseAnswer6").classList.add("hide");
     document.querySelector("#tryAgain").classList.remove("hide");
+    document.querySelector("#tryAgain").classList.add("pulse");
     document.querySelector("#tryAgain").addEventListener("click", reset);
 }
 

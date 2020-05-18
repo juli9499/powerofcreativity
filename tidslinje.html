@@ -11,6 +11,17 @@
     <!--    google fonte-->
     <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Open+Sans:400,400i,600,600i,700,700i,800,800i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
+ <!-----favicon------->
+ <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+ <link rel="manifest" href="favicon/site.webmanifest">
+ <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+ <meta name="msapplication-TileColor" content="#ededed">
+ <meta name="theme-color" content="#ffffff">
+
+<!-----Link til scroll animationer------->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -154,18 +165,24 @@
 
 
     <!--------------------------------- L Æ S    M E R E  ------------------------------>
+    <div data-aos="zoom-in" data-aos-duration="2000">
+       
     <div class="laesmere-bund">
+        
         <h3>Læs mere om bevægelsen her</h3>
         <a href="bevaegelse.html" class="current">
             <img class="laesmere-knap" src="foto/bloom-laesmere.png" class="some" alt="Læs mere">
         </a>
     </div>
-
+</div>
+<div data-aos="fade-up" data-aos-duration="2500">
     <a href="https://www.instagram.com/the_powerofcreativity/" target="_blank" rel="noopener">
         <div class="hashtagget">
             <h1><span class="green">#powerofcreativity</span></h1>
         </div>
     </a>
+</div>
+
     <!------------------------------------ F O O T E R ------------------------------------>
     <footer>
         <div class="footer-baggrunde">
@@ -285,6 +302,16 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="script.js"></script>
+
+    <!--------------------  Link til scroll animationer --------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        //call the animations on page
+AOS.init();
+
+    </script>
+
 </body>
 
 </html>

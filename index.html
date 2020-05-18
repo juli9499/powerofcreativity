@@ -23,6 +23,9 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ededed">
     <meta name="theme-color" content="#ffffff">
+
+    <!-----Link til scroll animationer------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -80,7 +83,7 @@
 
                 The Power Of Creativity er bevægelsen som skal give forældre og børn en bedre forståelse for hvorfor kreativ læring er så afgørende for børns udvikling og for Danmarks fremtid. Vi vil gøre samfundet klogere på hvordan vi kan udvikle børns kreative evner, så de er bedre udrustet til fremtidens samfund. Ved hjælp af kreativ læring kan vi udvikle mennesker det kan stå stærkt i sig selv og som tror på at deres egne skaberkraft kan gøre en forskel for verden.
                 <br> <br>
-                <span class="blue">#powerofcreativity</span>
+                <span class="blue">#enkreativfremtid</span>
             </p>
         </div>
         <div class="klode_gif"></div>
@@ -88,12 +91,14 @@
     </section>
 
     <!----------------------------- Q U O T E 1 -------------------------->
+    
     <section id="quote1" class="whitespace">
         <div class="brush-stroke-yellow"></div>
-
+        <div data-aos="fade-up">
         <h2>"“All Children are <span class="blue">artists</span>. The problem is how to remain an artist once he grows up.”
             <br> <br>
             <span style="font-weight: 100">- Pablo Picasso</span></h2>
+        </div>
     </section>
     <!----------------------------- H J E R N E N -------------------------->
 
@@ -102,7 +107,7 @@
     <section id="hjernen" class="whitespace">
 
         <div class="container">
-            <h2>Find ud af hvad <span class="yellow">hjernen</span> kan!</h2>
+            <h1>Find ud af hvad <span class="yellow">hjernen</span> kan!</h1>
             <div class="hjernentekst">
                 <div>
                     <p>Ved at bruge og træne både den logiske og den kreative del af hjernen, har man større chance for at blive succesfuld. Er man overvejende logisk, har man svært ved at skabe nye idéer og innovative løsninger, som er en central kilde til økonomisk værdiskabelse i fremtiden.</p>
@@ -207,10 +212,11 @@
     <!------------------------------ Q U O T E ----------------------------->
     <section id="quote" class="whitespace">
         <div class="brush-stroke3"></div>
-
+        <div data-aos="fade-up">
         <h2>"Logic will get you from A to B. <span class="green">Imagination</span> will take you everywhere"
             <br><br>
             <span style="font-weight: 100">- Albert Einstein</span></h2>
+        </div>
     </section>
 
 
@@ -225,7 +231,7 @@
         </div>
         <div class="ekspert_text">
             <div class="brush-stroke2"></div>
-            <h2>Lyt til <span class="pink">eksperternes</span> mening om kreativitet</h2>
+            <h1>Lyt til <span class="pink">eksperternes</span> mening om kreativitet</h1>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
         </div>
     </section>
@@ -234,9 +240,9 @@
     <!-------------------------- Q U I Z   M Y T E R -------------------->
     <section id="myter" class="container12 whitespace">
         <div class="myter_text">
-            <h2>Kender du <span class="yellow">myterne</span> om kreativitet?
+            <h1>Kender du <span class="yellow">myterne</span><br> om kreativitet?
                 <br><br>
-                Er det sandt eller falsk?</h2>
+                Er det sandt eller falsk?</h1>
             <p>Mange opfatter kreativitet forskelligt og det findes en lang række myter om hvad kreativitet rent faktisk er. Hvis du forestiller dig en kreativ person, er det så en kunstnerisk person, med malesæt og forklæde, du ser foran dig? Du tror måske, at kreativitet er noget man laver med hænderne, og måske mener du at kreativitet er en genetisk evne, få mennesker har?
                 <br> <br> <br>
                 Test dig selv og se om du tror på de myter, der findes om kreativitet!
@@ -465,17 +471,21 @@
 </div>
 -->
     <!--------------------------------- L Æ S    M E R E  ------------------------------>
+    <div data-aos="zoom-in" data-aos-duration="2000">
     <div class="laesmere-bund">
         <h3>Læs mere om iværksætteri her</h3>
         <a href="ivaerksaet.html" class="current">
             <img class="laesmere-knap" src="foto/bloom-laesmere.png" class="some" alt="Læs mere">
         </a>
     </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="2500">
     <a href="https://www.instagram.com/the_powerofcreativity/" target="_blank" rel="noopener">
         <div class="hashtagget">
-            <h1><span class="green">#powerofcreativity</span></h1>
+            <h1><span class="green">#enkreativfremtid</span></h1>
         </div>
     </a>
+</div>
     <!------------------------------------ F O O T E R ------------------------------------>
     <footer>
         <div class="footer-baggrunde">
@@ -589,13 +599,18 @@
 
 
 
-
-
-
+<!--------------------  Link til scroll animationer --------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="script.js"></script>
+
+    <script>
+        //call the animations on page
+AOS.init();
+
+    </script>
 </body>
 
 </html>

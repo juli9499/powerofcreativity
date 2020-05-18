@@ -35,23 +35,25 @@ function sidenVises() {
 }
 
 function showStart() {
-    document.querySelector("#submit").classList.remove("hide");
-    document.querySelector("#startbillede").classList.remove("hide");
-    document.querySelector("#submit").addEventListener("click", startQuiz);
-    document.querySelector("#submit").addEventListener("click", hideSubmit);
-
     document.querySelector("#resultat").classList.add("hide");
+    document.querySelector("#beginningQuiz").classList.remove("hide");
+    document.querySelector("#submit").addEventListener("click", hideSubmit);
+    
+    
+    
 }
 
 function hideSubmit() {
-    document.querySelector("#submit").classList.add("hide");
-    document.querySelector("#startbillede").classList.add("hide");
+    document.querySelector("#beginningQuiz").classList.add("dissappear");
+    document.querySelector("#beginningQuiz").addEventListener("animationend", startQuiz);
+
+    
 }
 
 function startQuiz() {
+    document.querySelector("#firstQuestion").classList.add("show");
+    document.querySelector("#beginningQuiz").classList.add("hide");
     document.querySelector("#firstQuestion").classList.remove("hide");
-    document.querySelector("#true1").classList.remove("hide");
-    document.querySelector("#false1").classList.remove("hide");
     document.querySelector("#true1").addEventListener("click", correctQ1);
     document.querySelector("#false1").addEventListener("click", falseQ1);
 }
@@ -61,10 +63,8 @@ function correctQ1() {
     document.querySelector("#correctAnswer1").classList.remove("hide");
     document.querySelector("#firstQuestion").classList.add("hide");
     document.querySelector(".firstbillede").classList.remove("hide");
-    document.querySelector("#true1").classList.add("hide");
-    document.querySelector("#false1").classList.add("hide");
     document.querySelector("#nextQuestionTrue").classList.remove("hide");
-    document.querySelector("#nextQuestionTrue").addEventListener("click", secondQuestion);
+    document.querySelector("#nextQuestionTrue").addEventListener("click", slideOutAnimation1);
 }
 
 function falseQ1() {
@@ -74,10 +74,18 @@ function falseQ1() {
     document.querySelector("#true1").classList.add("hide");
     document.querySelector("#false1").classList.add("hide");
     document.querySelector("#nextQuestionFalse").classList.remove("hide");
-    document.querySelector("#nextQuestionFalse").addEventListener("click", secondQuestion);
+    document.querySelector("#nextQuestionFalse").addEventListener("click", slideOutAnimation1);
+}
+
+function slideOutAnimation1() {
+    document.querySelector("#falseAnswer1").classList.add("dissappear");
+    document.querySelector("#falseAnswer1").addEventListener("animationend", secondQuestion);
+    document.querySelector("#correctAnswer1").classList.add("dissappear");
+    document.querySelector("#correctAnswer1").addEventListener("animationend", secondQuestion);
 }
 
 function secondQuestion() {
+    document.querySelector("#secQuestion").classList.add("show");
     document.querySelector("#secQuestion").classList.remove("hide");
     document.querySelector("#true2").classList.remove("hide");
     document.querySelector("#false2").classList.remove("hide");
@@ -95,7 +103,7 @@ function correctQ2() {
     document.querySelector("#true2").classList.add("hide");
     document.querySelector("#false2").classList.add("hide");
     document.querySelector("#nextQuestionTrue2").classList.remove("hide");
-    document.querySelector("#nextQuestionTrue2").addEventListener("click", thirdQuestion);
+    document.querySelector("#nextQuestionTrue2").addEventListener("click", slideOutAnimation2);
 }
 
 function falseQ2() {
@@ -104,12 +112,19 @@ function falseQ2() {
     document.querySelector("#true2").classList.add("hide");
     document.querySelector("#false2").classList.add("hide");
     document.querySelector("#nextQuestionFalse2").classList.remove("hide");
-    document.querySelector("#nextQuestionFalse2").addEventListener("click", thirdQuestion);
+    document.querySelector("#nextQuestionFalse2").addEventListener("click", slideOutAnimation2);
+}
+
+function slideOutAnimation2() {
+    document.querySelector("#falseAnswer2").classList.add("dissappear");
+    document.querySelector("#falseAnswer2").addEventListener("animationend", thirdQuestion);
+    document.querySelector("#correctAnswer2").classList.add("dissappear");
+    document.querySelector("#correctAnswer2").addEventListener("animationend", thirdQuestion);
 }
 
 function thirdQuestion() {
     console.log("tredje");
-
+    document.querySelector("#thirdQuestion").classList.add("show");
     document.querySelector("#thirdQuestion").classList.remove("hide");
     document.querySelector("#true3").classList.remove("hide");
     document.querySelector("#false3").classList.remove("hide");
@@ -128,7 +143,7 @@ function correctQ3() {
     document.querySelector("#true3").classList.add("hide");
     document.querySelector("#false3").classList.add("hide");
     document.querySelector("#nextQuestionTrue3").classList.remove("hide");
-    document.querySelector("#nextQuestionTrue3").addEventListener("click", forthQuestion);
+    document.querySelector("#nextQuestionTrue3").addEventListener("click", slideOutAnimation3);
 }
 
 function falseQ3() {
@@ -137,11 +152,19 @@ function falseQ3() {
     document.querySelector("#true3").classList.add("hide");
     document.querySelector("#false3").classList.add("hide");
     document.querySelector("#nextQuestionFalse3").classList.remove("hide");
-    document.querySelector("#nextQuestionFalse3").addEventListener("click", forthQuestion);
+    document.querySelector("#nextQuestionFalse3").addEventListener("click", slideOutAnimation3);
+}
+
+function slideOutAnimation3() {
+    document.querySelector("#falseAnswer3").classList.add("dissappear");
+    document.querySelector("#falseAnswer3").addEventListener("animationend", forthQuestion);
+    document.querySelector("#correctAnswer3").classList.add("dissappear");
+    document.querySelector("#correctAnswer3").addEventListener("animationend", forthQuestion);
 }
 
 function forthQuestion() {
     console.log("fjerde");
+    document.querySelector("#fourthQuestion").classList.add("show");
     document.querySelector("#fourthQuestion").classList.remove("hide");
     document.querySelector("#true4").classList.remove("hide");
     document.querySelector("#false4").classList.remove("hide");
@@ -163,7 +186,7 @@ function correctQ4() {
     document.querySelector("#true4").classList.add("hide");
     document.querySelector("#false4").classList.add("hide");
     document.querySelector("#nextQuestionTrue4").classList.remove("hide");
-    document.querySelector("#nextQuestionTrue4").addEventListener("click", fifthQuestion);
+    document.querySelector("#nextQuestionTrue4").addEventListener("click", slideOutAnimation4);
 }
 
 function falseQ4() {
@@ -173,12 +196,19 @@ function falseQ4() {
     document.querySelector("#true4").classList.add("hide");
     document.querySelector("#false4").classList.add("hide");
     document.querySelector("#nextQuestionFalse4").classList.remove("hide");
-    document.querySelector("#nextQuestionFalse4").addEventListener("click",fifthQuestion);
-    document.querySelector("#correctslut").addEventListener("click", fifthQuestion);
+    document.querySelector("#nextQuestionFalse4").addEventListener("click", slideOutAnimation4);
+}
+
+function slideOutAnimation4() {
+    document.querySelector("#falseAnswer4").classList.add("dissappear");
+    document.querySelector("#falseAnswer4").addEventListener("animationend", fifthQuestion);
+    document.querySelector("#correctAnswer4").classList.add("dissappear");
+    document.querySelector("#correctAnswer4").addEventListener("animationend", fifthQuestion);
 }
 
 function fifthQuestion() {
     console.log("femte");
+    document.querySelector("#fifthQuestion").classList.add("show");
     document.querySelector("#fifthQuestion").classList.remove("hide");
     document.querySelector("#true5").classList.remove("hide");
     document.querySelector("#false5").classList.remove("hide");
@@ -199,7 +229,7 @@ function correctQ5() {
     document.querySelector("#true5").classList.add("hide");
     document.querySelector("#false5").classList.add("hide");
     document.querySelector("#nextQuestionTrue5").classList.remove("hide");
-    document.querySelector("#nextQuestionTrue5").addEventListener("click", sixthQuestion);
+    document.querySelector("#nextQuestionTrue5").addEventListener("click", slideOutAnimation5);
 }
 
 function falseQ5() {
@@ -209,12 +239,20 @@ function falseQ5() {
     document.querySelector("#true5").classList.add("hide");
     document.querySelector("#false5").classList.add("hide");
     document.querySelector("#nextQuestionFalse5").classList.remove("hide");
-    document.querySelector("#nextQuestionFalse5").addEventListener("click", sixthQuestion);
+    document.querySelector("#nextQuestionFalse5").addEventListener("click", slideOutAnimation5);
 
+}
+
+function slideOutAnimation5() {
+    document.querySelector("#falseAnswer5").classList.add("dissappear");
+    document.querySelector("#falseAnswer5").addEventListener("animationend", sixthQuestion);
+    document.querySelector("#correctAnswer5").classList.add("dissappear");
+    document.querySelector("#correctAnswer5").addEventListener("animationend", sixthQuestion);
 }
 
 function sixthQuestion() {
     console.log("sjette");
+    document.querySelector("#sixthQuestion").classList.add("show");
     document.querySelector("#sixthQuestion").classList.remove("hide");
     document.querySelector("#true6").classList.remove("hide");
     document.querySelector("#false6").classList.remove("hide");
@@ -235,7 +273,7 @@ function correctQ6() {
     document.querySelector("#true6").classList.add("hide");
     document.querySelector("#false6").classList.add("hide");
     document.querySelector("#nextQuestionTrue6").classList.remove("hide");
-    document.querySelector("#nextQuestionTrue6").addEventListener("click", Results);
+    document.querySelector("#nextQuestionTrue6").addEventListener("click", slideOutAnimation6);
 }
 
 function falseQ6() {
@@ -245,19 +283,29 @@ function falseQ6() {
     document.querySelector("#true6").classList.add("hide");
     document.querySelector("#false6").classList.add("hide");
     document.querySelector("#nextQuestionFalse6").classList.remove("hide");
-    document.querySelector("#nextQuestionFalse6").addEventListener("click", Results);
+    document.querySelector("#nextQuestionFalse6").addEventListener("click", slideOutAnimation6);
+}
+
+function slideOutAnimation6() {
+    document.querySelector("#falseAnswer6").classList.add("dissappear");
+    document.querySelector("#falseAnswer6").addEventListener("animationend", Results);
+    document.querySelector("#correctAnswer6").classList.add("dissappear");
+    document.querySelector("#correctAnswer6").addEventListener("animationend", Results);
 }
 
 function Results() {
     console.log("resultat");
+    document.querySelector("#resultat").classList.add("show");
     document.querySelector("#resultat").classList.remove("hide");
     document.querySelector("#correctAnswer6").classList.add("hide");
     document.querySelector("#falseAnswer6").classList.add("hide");
     document.querySelector("#tryAgain").classList.remove("hide");
-    document.querySelector("#tryAgain").addEventListener("click", showStart);
+    document.querySelector("#tryAgain").addEventListener("click", reset);
 }
 
-
+function reset() {
+    window.history.go(0);
+}
 
 
 //-------------------------------------- I M A G E     S L I D E R -------------------------------

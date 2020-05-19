@@ -2334,7 +2334,7 @@ footer h2 {
     .brush-stroke-6 {
         width: 400px;
         height: 250px;
-        top: 1900px;
+        top: 1950px;
         left: -120px;
         z-index: -1;
 
@@ -2343,7 +2343,7 @@ footer h2 {
     .brush-stroke-5 {
         width: 400px;
         height: 250px;
-        top: 2400px;
+        top: 2500px;
         right: -120px;
         z-index: -1;
 
@@ -2399,7 +2399,7 @@ footer h2 {
 
     }
 
-/*
+    /*
     #dogmer img {
         width: 100px;
         height: auto;
@@ -2614,6 +2614,7 @@ footer h2 {
         z-index: -1;
     }
 
+/*
     .brush-stroke-9 {
         width: 400px;
         height: 250px;
@@ -2658,6 +2659,7 @@ footer h2 {
         z-index: -1;
 
     }
+*/
 
 }
 
@@ -2707,7 +2709,7 @@ footer h2 {
     .brush-stroke-7 {
         width: 400px;
         height: 250px;
-        top: 1600px;
+        top: 1650px;
         right: -120px;
         z-index: -1;
 
@@ -2716,7 +2718,7 @@ footer h2 {
     .brush-stroke-6 {
         width: 400px;
         height: 250px;
-        top: 2250px;
+        top: 2330px;
         left: -120px;
         z-index: -1;
 
@@ -2725,7 +2727,7 @@ footer h2 {
     .brush-stroke-5 {
         width: 400px;
         height: 250px;
-        top: 2930px;
+        top: 3080px;
         right: -120px;
         z-index: -1;
 

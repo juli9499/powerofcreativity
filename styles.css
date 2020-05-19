@@ -891,6 +891,7 @@ a:hover {
         transform: scale(1);
     }
 }
+
 /*---------------------------------- D O G M E R -------------------------------*/
 
 #dogmer img {
@@ -945,6 +946,7 @@ a:hover {
     width: 500px;
     justify-self: center;
 }
+
 .ivaerksaetter1 {
     width: 500px;
     justify-self: start;
@@ -1154,8 +1156,8 @@ input#slider::-ms-tooltip {
 
 }
 
-#ivaerksaetter, #dogmer
- {
+#ivaerksaetter,
+#dogmer {
     grid-template-columns: 1fr;
     column-gap: 0px;
     display: grid;
@@ -1165,22 +1167,28 @@ input#slider::-ms-tooltip {
     overflow: hidden;
 }
 
-#ivaerksaetter, #dogmer  p {
+#ivaerksaetter,
+#dogmer p {
     text-align: center;
 }
 
-#ivaerksaetter, #dogmer h3 {
+#ivaerksaetter,
+#dogmer h3 {
     text-align: center;
 }
 
-#ivaerksaetter, #dogmer h2 {
+#ivaerksaetter,
+#dogmer h2 {
     text-align: center;
 }
 
-.ivaerksaetter_intro, .dogmer_intro {
+.ivaerksaetter_intro,
+.dogmer_intro {
     width: 500px;
     justify-self: center;
-} {
+}
+
+    {
     width: 500px;
     justify-self: center;
 }
@@ -2066,7 +2074,8 @@ footer h2 {
 .logoer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  margin: 0 auto;;
+    margin: 0 auto;
+    ;
     justify-self: center;
     align-self: end;
 
@@ -2076,7 +2085,7 @@ footer h2 {
     width: 100%;
     height: auto;
     max-width: 150px;
-max-height: 150px;
+    max-height: 150px;
 }
 
 .some {
@@ -2154,6 +2163,7 @@ max-height: 150px;
         display: none;
 
     }
+
     .brush-stroke-100 {
         display: none;
 
@@ -2223,6 +2233,16 @@ max-height: 150px;
     }
 
     #ekspert_video div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+
+    #ekspert_video2 div:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1 / 0;
+    }
+
+    #ekspert_video2 div:nth-child(2) {
         grid-column: 1;
         grid-row: 1 / 2;
     }
@@ -2456,7 +2476,7 @@ max-height: 150px;
         width: 70px;
         height: 70px;
         margin: 0 auto;
-        
+
     }
 
 
@@ -2577,6 +2597,7 @@ max-height: 150px;
         padding-left: 0vw;
         grid-gap: 10vh;
     }
+
     .ivaerksaetter_intro {
         width: auto;
         padding-left: 10vw;

@@ -894,14 +894,7 @@ a:hover {
 
 /*---------------------------------- D O G M E R -------------------------------*/
 
-#dogmer img {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 
 
 
@@ -917,46 +910,6 @@ a:hover {
     z-index: -1;
 
 }
-
-#dogmer {
-    grid-template-columns: 1fr;
-    column-gap: 0px;
-    display: grid;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    position: relative;
-    overflow: hidden;
-}
-
-#dogmer p {
-    text-align: center;
-}
-
-#dogmer h2 {
-    text-align: center;
-}
-
-#dogmer h4 {
-    text-align: center;
-    line-height: 2;
-    text-decoration: none;
-}
-
-.dogmer_intro {
-    width: 500px;
-    justify-self: center;
-}
-
-.ivaerksaetter1 {
-    width: 500px;
-    justify-self: start;
-}
-
-.ivaerksaetter2 {
-    width: 500px;
-    justify-self: end;
-}
-
 
 
 /*---------------------------------- I M A G E   S L I D E R -------------------------------*/
@@ -1141,7 +1094,14 @@ input#slider::-ms-tooltip {
 
 }
 
+#dogmer img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
 .brush-stroke-pink1 {
     background-image: url(brushstrokes/pink2.png);
@@ -2217,15 +2177,13 @@ footer h2 {
         text-align: center;
     }
 
-    #ivaerksaetter {
-        padding-right: 10vw;
-        grid-gap: 10vh;
-    }
-
+    #ivaerksaetter,
     #dogmer {
         padding-right: 10vw;
         grid-gap: 10vh;
     }
+
+
 
     #ekspert_video div:nth-child(1) {
         grid-column: 1;
@@ -2441,6 +2399,17 @@ footer h2 {
 
     }
 
+/*
+    #dogmer img {
+        width: 100px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+*/
+
     .footer-tablet {
         display: none;
     }
@@ -2586,27 +2555,23 @@ footer h2 {
         left: -70px;
     }
 
-    #ivaerksaetter {
-        padding-right: 0vw;
-        padding-left: 0vw;
-        grid-gap: 10vh;
-    }
-
+    #ivaerksaetter,
     #dogmer {
         padding-right: 0vw;
         padding-left: 0vw;
         grid-gap: 10vh;
     }
 
-    .ivaerksaetter_intro {
+
+
+    .ivaerksaetter_intro,
+    .dogmer_intro {
         width: auto;
         padding-left: 10vw;
         padding-right: 10vw;
     }
 
-    .dogmer_intro {
-        width: 100%;
-    }
+
 
     .ivaerksaetter1 {
         width: auto;

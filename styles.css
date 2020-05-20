@@ -918,10 +918,12 @@ a:hover {
 /*---------------------------------- I M A G E   S L I D E R -------------------------------*/
 
 .slide_foto {
-    height: 300px;
+    height: 350px;
     margin: 1vw auto;
+    max-height: 750px;
+    max-width: 1000px;
     overflow: hidden;
-    width: 530px;
+    width: 600px;
 }
 
 .slide_foto figure {
@@ -932,7 +934,6 @@ a:hover {
     margin: 0;
     position: relative;
     width: 100%;
-    z-index: 2;
 }
 
 #compare {
@@ -946,10 +947,9 @@ a:hover {
     min-width: 0.6%;
     overflow: visible;
     position: absolute;
-    width: 100%;
+    width: 50%;
     animation: first 2s 1 normal ease-in-out 0.1s;
     -webkit-animation: first 2s 1 normal ease-in-out 0.1s;
-    z-index: 2;
 }
 
 input#slider {
@@ -966,12 +966,10 @@ input#slider {
     position: relative;
     top: -100vw;
     width: 100%;
-    z-index: 2;
 }
 
 input#slider::-moz-range-track {
     background: transparent;
-    z-index: 2;
 }
 
 input#slider::-ms-track {
@@ -987,12 +985,10 @@ input#slider::-ms-track {
     padding: 0;
     cursor: col-resize;
     color: transparent;
-    z-index: 2;
 }
 
 input#slider::-ms-fill-lower {
     background-color: transparent;
-    z-index: 2;
 }
 
 input#slider::-webkit-slider-thumb {
@@ -1000,7 +996,6 @@ input#slider::-webkit-slider-thumb {
     height: 100vw;
     width: 0.5%;
     opacity: 0;
-    z-index: 2;
 }
 
 input#slider::-moz-range-thumb {
@@ -1008,19 +1003,16 @@ input#slider::-moz-range-thumb {
     height: 100vw;
     width: 0.5%;
     opacity: 0;
-    z-index: 2;
 }
 
 input#slider::-ms-thumb {
     height: 100vw;
     width: 0.5%;
     opacity: 0;
-    z-index: 2;
 }
 
 input#slider::-ms-tooltip {
     display: none;
-    z-index: 2;
 }
 
 #compare::before {
@@ -1033,7 +1025,6 @@ input#slider::-ms-tooltip {
     position: relative;
     top: 0;
     width: 64px;
-    z-index: 3;
 }
 
 @keyframes first {

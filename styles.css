@@ -550,6 +550,7 @@ a:hover {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 /*----------------------------------- Q U O T E -----------------------------*/
@@ -2166,6 +2167,7 @@ footer h2 {
         height: auto;
         margin-left: auto;
         margin-right: auto;
+
     }
 
 
@@ -2633,8 +2635,8 @@ footer h2 {
     }
 
     .whitespace {
-        padding-top: 20vw;
-        padding-bottom: 20vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
     }
 
     #startbillede,
@@ -2648,8 +2650,8 @@ footer h2 {
     }
 
     .brush-stroke3 {
-        top: 150px;
-        left: -250px;
+        top: 0px;
+        left: -280px;
 
     }
 
@@ -2731,6 +2733,12 @@ footer h2 {
         top: 180px;
         left: -85vw;
         z-index: -1;
+    }
+
+    .brush-stroke3 {
+        top: 0px;
+        left: -320px;
+
     }
 
     .brush-stroke-9 {

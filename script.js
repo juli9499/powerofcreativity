@@ -326,9 +326,6 @@ function beforeAfter() {
     document.getElementById('compare').style.width = document.getElementById('slider').value + "%";
 }
 
-
-
-
 //-------------------------------------- T I M E L I N E -------------------------------
 (function () {
 

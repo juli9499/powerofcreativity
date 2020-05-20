@@ -51,6 +51,8 @@ h1 {
     font-weight: 500;
     font-size: 2rem;
     color: #404040;
+    margin-top: 0;
+
 }
 
 h2 {
@@ -282,7 +284,7 @@ a:hover {
 }
 
 .splash_background {
-    background-image: url(foto/splash-tester.jpg);
+    background-image: url(foto/splash-billede.jpg);
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -610,7 +612,7 @@ a:hover {
     overflow: hidden;
 }
 
-#ekspert_video3 h2 {
+#ekspert_video3 h1 {
     margin-top: 0px;
 }
 
@@ -645,7 +647,7 @@ a:hover {
 
 #submit {
     display: inline-block;
-    background-image: url(foto/startquiz.png);
+    background-image: url(foto/startquiz-hvid.png);
     background-repeat: no-repeat;
     cursor: pointer;
     background-size: 100%;
@@ -679,7 +681,8 @@ a:hover {
 }
 
 #quiz-container p {
-    color: #00242A;
+    /*    color: #00242A;*/
+    color: #ffffff;
 }
 
 #startbillede {
@@ -778,7 +781,7 @@ a:hover {
 #true5,
 #true6 {
     display: inline-block;
-    background-image: url(foto/sandt.png);
+    background-image: url(foto/sandt-hvid.png);
     background-repeat: no-repeat;
     cursor: pointer;
     background-size: 100%;
@@ -793,7 +796,7 @@ a:hover {
 #false5,
 #false6 {
     display: inline-block;
-    background-image: url(foto/falsk.png);
+    background-image: url(foto/falsk-hvid.png);
     background-repeat: no-repeat;
     cursor: pointer;
     background-size: 100%;
@@ -814,7 +817,7 @@ a:hover {
 #nextQuestionFalse5,
 #nextQuestionTrue6,
 #nextQuestionFalse6 {
-    background-image: url(foto/naeste.png);
+    background-image: url(foto/naeste-hvid.png);
     background-repeat: no-repeat;
     cursor: pointer;
     background-size: 100%;
@@ -824,7 +827,7 @@ a:hover {
 }
 
 #tryAgain {
-    background-image: url(foto/provigen.png);
+    background-image: url(foto/provigen-hvid.png);
     background-repeat: no-repeat;
     cursor: pointer;
     background-size: 100%;
@@ -1301,18 +1304,19 @@ input#slider::-ms-tooltip {
     align-self: center;
 }
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 
@@ -1347,6 +1351,7 @@ input#slider::-ms-tooltip {
 #tidslinje p {
     margin: 0px;
     padding: 10px;
+
 }
 
 
@@ -1374,7 +1379,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 1300px;
+    top: 1100px;
     left: -150px;
     z-index: 1;
 }
@@ -1387,7 +1392,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 800px;
+    top: 700px;
     right: -150px;
     z-index: 1;
 }
@@ -1400,7 +1405,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 1650px;
+    top: 1450px;
     right: -150px;
     z-index: 1;
 }
@@ -1413,7 +1418,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 2100px;
+    top: 1800px;
     left: -150px;
     z-index: 1;
 }
@@ -1426,7 +1431,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 2600px;
+    top: 2300px;
     right: -150px;
     z-index: 1;
 }
@@ -1476,6 +1481,11 @@ input#slider::-ms-tooltip {
     /*    background: #456990;*/
     /*    padding: 50px 0;*/
 
+
+}
+
+.timeline ul p {
+    color: white;
 }
 
 .timeline ul li {
@@ -1654,6 +1664,7 @@ padding-bottom: 20px;
 
 #quiz {
     background-color: #17BAD1;
+
     padding-bottom: 20px;
     width: 100%;
     border-radius: 2%;
@@ -2626,7 +2637,7 @@ footer h2 {
         z-index: -1;
     }
 
-/*
+    /*
     .brush-stroke-9 {
         width: 400px;
         height: 250px;

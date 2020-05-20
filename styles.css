@@ -544,6 +544,14 @@ a:hover {
     }
 }
 
+/*----------------------------------- T E G N E V I D E O     F O R S I D E -----------------------------*/
+#tegnevideo {
+    width: 70vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*----------------------------------- Q U O T E -----------------------------*/
 
 #quote {
@@ -2091,6 +2099,14 @@ footer h2 {
     }
 }
 
+@media screen and (min-width: 2000px) {
+    .slide_foto {
+        height: 500px;
+        width: 800px;
+    }
+
+}
+
 @media screen and (max-width: 1400px) {
     /*
     .mouse-scroll {
@@ -2120,6 +2136,13 @@ footer h2 {
 
 }
 
+@media screen and (max-width: 1300px) {
+    .slide_foto {
+        height: 300px;
+        width: 500px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     /*Hoejre del er dobbelt so stor som venstre (1-2)*/
@@ -2137,6 +2160,14 @@ footer h2 {
         display: none;
 
     }
+
+    #tegnevideo {
+        width: 80vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
     .brush-stroke-100 {
         display: none;

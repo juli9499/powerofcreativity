@@ -374,6 +374,10 @@ a:hover {
     text-align: center;
 }
 
+#hjernen h4 {
+    font-weight: bold;
+}
+
 /*
 .p-center {
     color: white;

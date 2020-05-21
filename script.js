@@ -378,6 +378,7 @@ function loadSiden () {
     document.querySelector(".playButton").classList.add("pulse");
     document.querySelector(".checkAnswers").classList.add("hide");
     document.querySelector("#startSpil").addEventListener("click", startQuizzen);
+    document.querySelector(".questions").classList.add("hide");
 
 
 }
@@ -386,6 +387,7 @@ function loadSiden () {
 function startQuizzen () {
     document.querySelector("#startSpil").classList.add("hide");
     document.querySelector(".checkAnswers").classList.remove("hide");
+    document.querySelector(".questions").classList.remove("hide");
     
     var questionArea = document.getElementsByClassName('questions')[0],
         answerArea = document.getElementsByClassName('answers')[0],

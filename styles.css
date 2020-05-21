@@ -1726,6 +1726,37 @@ time {
 
 /*--------------------------- K R E A T I V   Q U I Z  -------------------------------*/
 
+#startSpil {
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.introBillede {
+    background-image: url(foto/quizzivaerk.png);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.playButton {
+    display: inline-block;
+    background-image: url(foto/startquiz-hvid.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 100%;
+    width: 200px;
+    height: 100px;
+    margin: 20px 0 auto;
+    align-self: flex-end;
+}
+
+
+
 #kreativquiz {
     background-color: #00242A;
     width: auto;

@@ -371,8 +371,22 @@ function beforeAfter() {
 
 //------------------------------------ K R E A T I V   Q U I Z -------------------------------
 
-window.onload = function () {
+window.addEventListener("load", loadSiden);
 
+function loadSiden () {
+    document.querySelector("#startSpil").classList.remove("hide");
+    document.querySelector(".playButton").classList.add("pulse");
+    document.querySelector(".checkAnswers").classList.add("hide");
+    document.querySelector("#startSpil").addEventListener("click", startQuizzen);
+
+
+}
+
+
+function startQuizzen () {
+    document.querySelector("#startSpil").classList.add("hide");
+    document.querySelector(".checkAnswers").classList.remove("hide");
+    
     var questionArea = document.getElementsByClassName('questions')[0],
         answerArea = document.getElementsByClassName('answers')[0],
         checker = document.getElementsByClassName('checker')[0],

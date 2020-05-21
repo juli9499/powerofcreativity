@@ -1799,6 +1799,9 @@ padding-bottom: 20px;
 
 .answers {
     padding: 0px 0 10px 0px;
+    font-family: 'Roboto';
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .answers div {

@@ -446,7 +446,10 @@ window.onload = function () {
                 loadAnswers(current);
             } else {
                 questionArea.innerHTML = 'Done';
-                answerArea.innerHTML = '';
+                document.querySelector("#tryAgain").classList.remove("hide");
+
+                answerArea.innerHTML = 'Tak fordi du tog vores quiz. <br> <br> Vi håber at du har fået en bedre forstående for kreativ læring og iværksætteri.'
+                document.querySelector("#tryAgain").addEventListener("click", reset);
             }
 
         };

@@ -383,13 +383,13 @@ window.onload = function () {
         allQuestions = {
             'Hvem kan blive iværksætter?': ['En der har mange penge', 'En der har mange kontakter', 'En der har en idé, som kan føres ud i livet', 'En der har studeret business på universitetet', 2],
 
-            'Børn har ekstraordinære evner når det kommer til…': ['Skrive kunstskaber', 'Innovation', 'Matematik', 'Stå på hænder', 1],
+            'Børn har ekstraordinære evner når det kommer til…': ['Skrive kundskaber', 'Innovation', 'Matematik', 'Stå på hænder', 1],
 
             'Hvordan kan man blive en bedre innovator? ': ['Vente på at få en god idé/åbenbaring', 'Læs om andres idéer', 'Træne sin kreativitet', 'Gør ingenting', 2],
 
-            'Hvorfor er iværksætteri vigtigt?': ['Man tjener mange penge på det', 'Vi har brug for flere materielle produkter i verden', 'Verden er under konstant forandring og vi har brug for nye innovative idéer for at følge med i udviklingen', 'Der er ikke nok iværksætterer i verdenen', 2],
+            'Hvorfor er iværksætteri vigtigt?': ['Man tjener mange penge på det', 'Vi har brug for flere materielle produkter i verden', 'Verden er under konstant forandring og vi har brug for nye innovative idéer for at følge med i udviklingen', 'Der er ikke nok iværksætterer i verden', 2],
 
-            'For at komme op med en original idé skal man være forberedt på hvad?': ['Ikke fortælle nogen om det. Andre vil prøve at stjæle din idé', 'At man kan lave mange fejl undervejs', 'At man er god til at tegne', 'At det ikke tagerr lang tid', 1]
+            'For at komme på en original idé skal man være forberedt på hvad?': ['Ikke fortælle nogen om det. Andre vil prøve at stjæle din idé', 'At man kan lave mange fejl undervejs', 'At man skal have et team bag sig', 'At det ikke tager lang tid', 1]
         };
 
     function loadQuestion(curr) {

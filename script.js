@@ -377,14 +377,13 @@ function loadSiden () {
     document.querySelector("#startSpil").classList.remove("hide");
     document.querySelector(".playButton").classList.add("pulse");
     document.querySelector(".checkAnswers").classList.add("hide");
-    document.querySelector("#startSpil").addEventListener("click", startQuizzen);
     document.querySelector(".questions").classList.add("hide");
-
-
+    document.querySelector(".playButton").addEventListener("click", startQuizzen);
 }
 
 
 function startQuizzen () {
+    document.querySelector(".playButton").classList.add("hide");
     document.querySelector("#startSpil").classList.add("hide");
     document.querySelector(".checkAnswers").classList.remove("hide");
     document.querySelector(".questions").classList.remove("hide");

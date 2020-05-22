@@ -292,6 +292,9 @@ a:hover {
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 
 }
 
@@ -1751,11 +1754,19 @@ time {
     background-size: 100%;
     width: 200px;
     height: 100px;
-    margin: 20px 0 auto;
-    align-self: flex-end;
+    
 }
 
+.kreativ_text  {
+display: grid;
 
+}
+
+.kreativ_text .playButton  {
+  justify-self: center;
+    
+    }
+    
 
 #kreativquiz {
     background-color: #00242A;

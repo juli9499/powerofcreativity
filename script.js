@@ -375,15 +375,21 @@ window.addEventListener("load", loadSiden);
 
 function loadSiden () {
     document.querySelector("#startSpil").classList.remove("hide");
-    document.querySelector(".playButton").classList.add("pulse");
+    document.querySelector("#playButton").classList.add("pulse");
     document.querySelector(".checkAnswers").classList.add("hide");
     document.querySelector(".questions").classList.add("hide");
-    document.querySelector(".playButton").addEventListener("click", startQuizzen);
+    document.querySelector("#playButton").addEventListener("click", hideStartQuiz);
+}
+
+function hideStartQuiz () {
+    document.querySelector("#playButton").classList.remove("pulse");
+    document.querySelector("#playButton").classList.add("fade-out");
+    document.querySelector("#playButton").addEventListener("animationend", startQuizzen);
 }
 
 
 function startQuizzen () {
-    document.querySelector(".playButton").classList.add("hide");
+    document.querySelector("#playButton").classList.add("hidePlay");
     document.querySelector("#startSpil").classList.add("hide");
     document.querySelector(".checkAnswers").classList.remove("hide");
     document.querySelector(".questions").classList.remove("hide");

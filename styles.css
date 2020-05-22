@@ -653,7 +653,17 @@ a:hover {
     color: #ce2854;
 }
 
+.ekspert_text a {
+    color: #FF4677;
+    text-decoration: underline;
 
+}
+
+.ekspert_text a:hover {
+    color: #FFCB00;
+    text-decoration: underline;
+
+}
 
 
 .brush-stroke2 {
@@ -664,8 +674,8 @@ a:hover {
     position: absolute;
     width: 400px;
     height: 200px;
-    top: 350px;
-    right: -300px;
+    top: 200px;
+    right: -400px;
     z-index: -1;
 
 }
@@ -1209,7 +1219,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 100px;
+    top: 350px;
     right: -150px;
     z-index: 2;
 
@@ -1223,7 +1233,7 @@ input#slider::-ms-tooltip {
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 100px;
+    top: 750px;
     left: -150px;
     z-index: 2;
 
@@ -2331,11 +2341,7 @@ footer h2 {
 
     }
 
-    .brush-stroke2 {
-        top: 20px;
-        right: -350px;
 
-    }
 
 
 }
@@ -3116,7 +3122,7 @@ footer h2 {
     .brush-stroke-5 {
         width: 400px;
         height: 250px;
-        top: 2980px;
+        top: 2940px;
         right: -120px;
         z-index: -1;
 

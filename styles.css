@@ -1674,7 +1674,7 @@ input#slider::-ms-tooltip {
     border-color: transparent transparent transparent #17BAD1;
 }
 
-time {
+.time {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
@@ -1682,6 +1682,7 @@ time {
     color: white;
     padding: 10px;
     text-align: center;
+    margin-top: 0;
 }
 
 

@@ -453,7 +453,8 @@ a:hover {
 
 .lg-hotspot:hover .lg-hotspot__button,
 .lg-hotspot:active .lg-hotspot__button {
-    border-color: #FF4677;
+    /*    border-color: #FF4677;*/
+    border-color: #00242A;
 }
 
 .lg-hotspot:hover .lg-hotspot__button:after,
@@ -477,7 +478,7 @@ a:hover {
     border: 1px solid #00242A;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 999;
-    animation: button-pulse 7s ease-in-out infinite;
+    animation: button-pulse 2s ease-in-out infinite;
 }
 
 .lg-hotspot__button:after {
@@ -493,6 +494,8 @@ a:hover {
     border-radius: 100%;
     border: 3px solid white;
     background-color: #00242A;
+    /*    background-color: #17BAD1;*/
+
     transition: border-color 1s linear;
 }
 
@@ -553,17 +556,17 @@ a:hover {
 
 @keyframes button-pulse {
     0% {
-        transform: scale(1, 1);
+        transform: scale(0.9, 0.9);
         opacity: 1;
     }
 
     40% {
-        transform: scale(1.15, 1.15);
+        transform: scale(1.2, 1.2);
         opacity: 1;
     }
 
     100% {
-        transform: scale(1, 1);
+        transform: scale(0.9, 0.9);
         opacity: 1;
     }
 }

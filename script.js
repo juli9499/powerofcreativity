@@ -16,6 +16,9 @@ function selectHotspot(e) {
     });
 }
 
+function close() {
+    document.querySelector("lg-hotspot--selected").style.display = "none";
+}
 (() => {
     const buttons = document.querySelectorAll(".lg-hotspot__button");
     buttons.forEach(button => {

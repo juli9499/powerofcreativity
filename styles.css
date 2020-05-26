@@ -503,6 +503,11 @@ a:hover {
     background-color: #FF4677;
 }
 
+.blaafarve:hover .lg-hotspot__button:after,
+.blaafarve:active .lg-hotspot__button:after {
+    background-color: #17BAD1;
+}
+
 .lg-hotspot--selected {
     z-index: 999;
 }

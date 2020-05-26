@@ -1259,10 +1259,7 @@ input#slider::-ms-tooltip {
     justify-self: center;
 }
 
-    {
-    width: 500px;
-    justify-self: center;
-}
+
 
 .ivaerksaetter1 {
     width: 500px;
@@ -2207,6 +2204,51 @@ padding-bottom: 20px;
     overflow: auto;
 }*/
 
+/*---------------------------------- C O N T A C T   U S -------------------------------*/
+
+#contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.personer {
+    width: 300px;
+    column-gap: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact-us img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+#contact-us {
+    column-gap: 0px;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact-us p {
+    text-align: center;
+}
+
+#contact-us h3 {
+    text-align: center;
+}
+
+#contact-us h2 {
+    text-align: center;
+}
 
 /*---------------------------------- L Æ S   M ER E -------------------------------*/
 
@@ -2234,6 +2276,8 @@ padding-bottom: 20px;
 .laesmere-bund a {
     justify-self: center;
 }
+
+
 
 /*---------------------------------- F O O T E R -------------------------------*/
 .hashtagget {
@@ -2448,6 +2492,12 @@ iframe {
     /*Hoejre del er dobbelt so stor som venstre (1-2)*/
     .container12 {
         grid-template-columns: 1fr;
+    }
+
+    #contact-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 
 
@@ -2806,6 +2856,16 @@ iframe {
     .timeline ul li {
         padding-top: 50px;
 
+    }
+
+    #contact-us {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .personer {
+        margin-bottom: 20px;
     }
 
     .laesmere-bund {

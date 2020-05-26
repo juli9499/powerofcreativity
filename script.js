@@ -11,7 +11,7 @@ function selectHotspot(e) {
         if (hotspot === clickedHotspot) {
             hotspot.classList.toggle("lg-hotspot--selected");
         } else {
-         hotspot.classList.remove("lg-hotspot--selected");
+            hotspot.classList.remove("lg-hotspot--selected");
         }
     });
 }
@@ -372,7 +372,7 @@ function beforeAfter() {
 
 window.addEventListener("load", loadSiden);
 
-function loadSiden () {
+function loadSiden() {
     document.querySelector("#startSpil").classList.remove("hide");
     document.querySelector("#playButton").classList.add("pulse");
     document.querySelector(".checkAnswers").classList.add("hide");
@@ -380,19 +380,19 @@ function loadSiden () {
     document.querySelector("#playButton").addEventListener("click", hideStartQuiz);
 }
 
-function hideStartQuiz () {
+function hideStartQuiz() {
     document.querySelector("#playButton").classList.remove("pulse");
     document.querySelector("#playButton").classList.add("fade-out");
     document.querySelector("#playButton").addEventListener("animationend", startQuizzen);
 }
 
 
-function startQuizzen () {
+function startQuizzen() {
     document.querySelector("#playButton").classList.add("hidePlay");
     document.querySelector("#startSpil").classList.add("hide");
     document.querySelector(".checkAnswers").classList.remove("hide");
     document.querySelector(".questions").classList.remove("hide");
-    
+
     var questionArea = document.getElementsByClassName('questions')[0],
         answerArea = document.getElementsByClassName('answers')[0],
         checker = document.getElementsByClassName('checker')[0],
@@ -466,10 +466,10 @@ function startQuizzen () {
                 loadAnswers(current);
             } else {
                 questionArea.innerHTML = 'Done';
-                document.querySelector("#tryAgain").classList.remove("hide");
+                document.querySelector("#tryAgain2").classList.remove("hide");
 
                 answerArea.innerHTML = 'Tak fordi du tog vores quiz. <br> <br> Vi håber at du har fået en bedre forstående for kreativ læring og iværksætteri.'
-                document.querySelector("#tryAgain").addEventListener("click", reset);
+                document.querySelector("#tryAgain2").addEventListener("click", reset);
             }
 
         };

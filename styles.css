@@ -493,7 +493,7 @@ a:hover {
 
     &.visible {
         display: block;
-      }
+    }
 }
 
 .lg-hotspot:hover .lg-hotspot__button,
@@ -763,6 +763,12 @@ a:hover {
     width: auto;
 }
 
+
+#myter h2 {
+    color: white;
+    margin: 0;
+}
+
 #myter p {
     color: #F6F6F6;
 }
@@ -928,6 +934,17 @@ a:hover {
 
 #tryAgain {
     background-image: url(foto/provigen-hvid.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 100%;
+    width: 200px;
+    height: 120px;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+#tryAgain2 {
+    background-image: url(foto/provigen.png);
     background-repeat: no-repeat;
     cursor: pointer;
     background-size: 100%;
@@ -1836,16 +1853,19 @@ input#slider::-ms-tooltip {
     width: 200px;
     height: 100px;
     justify-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.kreativ_text {
-    display: grid;
+/*.kreativ_text {*/
+/*display: grid;*/
 
 }
 
 .kreativ_text h2 {
     display: grid;
-margin:0;
+    margin: 0;
 }
 
 .fade-out {
@@ -1921,9 +1941,11 @@ padding-bottom: 20px;
     height: 100%;
 }
 
+
+
 #quiz {
     background-color: #FFCB00;
-
+    color: #00242A;
     padding-bottom: 20px;
     width: 100%;
     border-radius: 2%;
@@ -1931,6 +1953,8 @@ padding-bottom: 20px;
     text-align: center;
     /*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
 }
+
+
 
 
 
@@ -1992,7 +2016,7 @@ padding-bottom: 20px;
 
 .correct,
 .false {
-    background-color: #83C52B;
+    background-color: #17BAD1;
     width: 60px;
     height: 30px;
     line-height: 30px;
@@ -2202,7 +2226,7 @@ padding-bottom: 20px;
 }
 
 .laesmere-knap {
-margin-top: 10px;
+    margin-top: 10px;
     width: 130px;
     height: 75px;
 }

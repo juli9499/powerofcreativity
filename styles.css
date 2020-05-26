@@ -1843,6 +1843,11 @@ input#slider::-ms-tooltip {
 
 }
 
+.kreativ_text h2 {
+    display: grid;
+margin:0;
+}
+
 .fade-out {
     -webkit-animation: fade-out 0.5s ease-out both;
     animation: fade-out 0.5s ease-out both;
@@ -1895,15 +1900,15 @@ input#slider::-ms-tooltip {
 }
 
 #kreativquiz p {
-    color: #F6F6F6;
+    color: #F2F2F2;
 }
 
 #kreativquiz h2 {
-    color: #F6F6F6;
+    color: #F2F2F2;
 }
 
 #kreativquiz h3 {
-    color: #F6F6F6;
+    color: #00242A;
 }
 
 /*#kreativquiz {*/
@@ -1917,12 +1922,12 @@ padding-bottom: 20px;
 }
 
 #quiz {
-    background-color: #17BAD1;
+    background-color: #FFCB00;
 
     padding-bottom: 20px;
     width: 100%;
     border-radius: 2%;
-    color: #fff;
+    color: #00242A;
     text-align: center;
     /*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
 }
@@ -1941,7 +1946,7 @@ padding-bottom: 20px;
     font-weight: 700;
     /*    font-style: italic;*/
     /*    border-top: 1px solid #FFFFFF;*/
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid #00242A;
     padding: 20px;
     font-family: 'Roboto';
 }
@@ -1957,7 +1962,7 @@ padding-bottom: 20px;
 
 .answers div:hover {
     cursor: pointer;
-    color: #FFCB00;
+    color: #17BAD1;
 }
 
 .answers {
@@ -1971,7 +1976,7 @@ padding-bottom: 20px;
     width: 50%;
     margin: 0 auto;
     padding-bottom: 15px;
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #00242A;
 }
 
 .answers div:first-child {

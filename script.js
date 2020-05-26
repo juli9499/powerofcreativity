@@ -11,13 +11,9 @@ function selectHotspot(e) {
         if (hotspot === clickedHotspot) {
             hotspot.classList.toggle("lg-hotspot--selected");
         } else {
-            hotspot.classList.remove("lg-hotspot--selected");
+         hotspot.classList.remove("lg-hotspot--selected");
         }
     });
-}
-
-function close() {
-    document.querySelector("lg-hotspot--selected").style.display = "none";
 }
 (() => {
     const buttons = document.querySelectorAll(".lg-hotspot__button");

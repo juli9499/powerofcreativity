@@ -490,6 +490,10 @@ a:hover {
     padding: 0;
     transform: translate(-50%, -50%);
     z-index: 0;
+
+    &.visible {
+        display: block;
+      }
 }
 
 .lg-hotspot:hover .lg-hotspot__button,
@@ -1023,7 +1027,7 @@ a:hover {
 }
 
 .slide_foto figure {
-    background-image: url(foto/slider-after.JPG);
+    background-image: url(foto/slider-moon-picture.jpg);
     background-size: cover;
     font-size: 0;
     height: 100%;

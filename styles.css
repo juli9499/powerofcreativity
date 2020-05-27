@@ -435,6 +435,10 @@ a:hover {
     text-align: center;
 }
 
+#hjernen h2 {
+    color: white;
+}
+
 #hjernen h4 {
     font-weight: bold;
 }

@@ -415,7 +415,7 @@ a:hover {
 }
 
 .klode_gif {
-    background-image: url(foto/globe_2.gif);
+/*     background-image: url(foto/globe_2.gif); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 300px;

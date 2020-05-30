@@ -2123,7 +2123,7 @@ padding-bottom: 20px;
 }
 
 .flower_picture {
-    background-image: url(foto/malte1.gif);
+   /*  background-image: url(foto/malte1.gif); */
     background-repeat: no-repeat;
     background-size: 100%;
     width: 400px;
@@ -2319,7 +2319,7 @@ footer {
 }
 
 .footer-web {
-    background-image: url(foto/footer-web.jpg);
+    background-image: url(foto/footer-web1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100vw;
@@ -2332,7 +2332,7 @@ footer {
 }
 
 .footer-tablet {
-    background-image: url(foto/footer-tablet.jpg);
+    background-image: url(foto/footer-tablet1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100vw;
@@ -2345,7 +2345,7 @@ footer {
 }
 
 .footer-mobile {
-    background-image: url(foto/footer-mobile.jpg);
+    background-image: url(foto/footer-mobile1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100vw;
@@ -2359,7 +2359,7 @@ footer {
 }
 
 .footer-micro-mobile {
-    background-image: url(foto/footer-micro.jpg);
+    background-image: url(foto/footer-micro1.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100vw;

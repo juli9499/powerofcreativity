@@ -1829,7 +1829,6 @@ input#slider::-ms-tooltip {
 
 
 /*--------------------------- K R E A T I V   Q U I Z  -------------------------------*/
-
 #startSpil {
     padding-top: 3vw;
     padding-left: 3vw;
@@ -1860,8 +1859,6 @@ input#slider::-ms-tooltip {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 
 .kreativ_text h2 {
@@ -1922,6 +1919,9 @@ input#slider::-ms-tooltip {
 }
 
 
+/*#kreativquiz {*/
+padding-bottom: 20px;
+/*}*/
 
 .wrapper {
     width: 430px;
